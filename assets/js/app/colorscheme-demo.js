@@ -1,3 +1,4 @@
+!function(name,definition){if(typeof module!="undefined")module.exports=definition();else if(typeof define=="function"&&typeof define.amd=="object")define(definition);else this[name]=definition()}("domready",function(){var fns=[],listener,doc=document,hack=doc.documentElement.doScroll,domContentLoaded="DOMContentLoaded",loaded=(hack?/^loaded|^c/:/^loaded|^i|^c/).test(doc.readyState);if(!loaded)doc.addEventListener(domContentLoaded,listener=function(){doc.removeEventListener(domContentLoaded,listener); loaded=1;while(listener=fns.shift())listener()});return function(fn){loaded?setTimeout(fn,0):fns.push(fn)}});domready(function(){document.documentElement.className+=" domready"});
 domready(function() {
     var navVariation = document.getElementById("navVariation");
     var navBtn = document.createElement("a");
@@ -45,7 +46,6 @@ domready(function() {
     var toggleBtn1 = document.createElement("button");
     var numberShades = document.getElementById("numberShades");
     var demoTilesId = document.getElementById("demo-tiles-id");
- demo-tiles-id
     toggleBtn1.innerHTML = "show colornames";
     toggleBtn1.setAttribute("class", "button button-16");
     toggleBtn1.setAttribute("data-text-swap", "hide colornames");
