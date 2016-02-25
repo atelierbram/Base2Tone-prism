@@ -28,7 +28,7 @@ pre[class*="language-"] {
   -ms-hyphens: none;
   hyphens: none;
   background: #fbf9f9;
-  color: #858fe5;
+  color: #979dd3;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
@@ -74,7 +74,7 @@ pre[class*="language-"] {
 .token.tag,
 .token.operator,
 .token.number {
-  color: #3342cc;
+  color: #4e58b1;
 }
 
 .token.property,
@@ -110,12 +110,12 @@ code.language-scss,
 .token.statement,
 .token.regex,
 .token.atrule {
-  color: #858fe5;
+  color: #979dd3;
 }
 
 .token.placeholder,
 .token.variable {
-  color: #a5adfe;
+  color: #bcc1e6;
 }
 
 .token.deleted {

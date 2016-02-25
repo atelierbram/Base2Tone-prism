@@ -28,19 +28,19 @@ pre[class*="language-"] {
   -ms-hyphens: none;
   hyphens: none;
   background: #2a2734;
-  color: #6771c5;
+  color: #7178bc;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: #3342cc;
+  background: #4e58b1;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
-  background: #3342cc;
+  background: #4e58b1;
 }
 
 /* Code blocks */
@@ -79,7 +79,7 @@ pre[class*="language-"] {
 
 .token.property,
 .token.function {
-  color: #6771c5;
+  color: #7178bc;
 }
 
 .token.tag-id,
@@ -90,7 +90,7 @@ pre[class*="language-"] {
 
 code.language-javascript,
 .token.attr-name {
-  color: #a5adfe;
+  color: #bcc1e6;
 }
 
 code.language-css,
@@ -137,7 +137,7 @@ code.language-scss,
 }
 
 .token.important {
-  color: #5762c7;
+  color: #656eb8;
 }
 
 .token.entity {
@@ -145,7 +145,7 @@ code.language-scss,
 }
 
 pre > code.highlight {
-  outline: .4em solid #5762c7;
+  outline: .4em solid #656eb8;
   outline-offset: .4em;
 }
 
