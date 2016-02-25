@@ -1,0 +1,1 @@
+<header class="header"><h1><a href="https://github.com/atelierbram/Base2Tone">Base2Tone - <span class="small"><?php echo $title; ?></span></a></h1><p>Themes for Prism based on <a href="http://simurai.com/projects/2016/01/01/duotone-themes">Duotone Themes</a> by <a href="http://simurai.com">Simurai</a> for Atom.</p></header>
