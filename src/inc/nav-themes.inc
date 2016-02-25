@@ -7,7 +7,7 @@
     <li class='<?php if ($theme=="space") echo "current"; ?> li-space'><a href="../../space/dark/">Space</a></li>
     <li class='<?php if ($theme=="earth") echo "current"; ?> li-earth'><a href="../../earth/dark/">Earth</a></li>
     <li class='<?php if ($theme=="forest") echo "current"; ?> li-forest'><a href="../../forest/dark/">Forest</a></li>
- <li class='<?php // if ($theme=="desert") echo "current"; ?> li-desert'><a href="../../desert/dark/">Desert</a></li>
+    <li class='<?php if ($theme=="desert") echo "current"; ?> li-desert'><a href="../../desert/dark/">Desert</a></li>
 <!--  <li class='<?php // if ($theme=="park") echo "current"; ?> li-park'><a href="../../park/dark/">Park</a></li> -->
 <!--  <li class='<?php // if ($theme=="meadow") echo "current"; ?> li-meadow'><a href="../../meadow/dark/">Meadow</a></li> -->
 <!--  <li class='<?php // if ($theme=="lake") echo "current"; ?> li-lake'><a href="../../lake/dark/">Lake</a></li> -->
