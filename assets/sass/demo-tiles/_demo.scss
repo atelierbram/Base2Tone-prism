@@ -91,9 +91,12 @@ body {
 h1, h2, h3 {
   display: inline-block;
   margin: 0;
-  padding: 1rem 0 0;
   font-family: AvenirNextCondensed-DemiBold, "Lucida Grande", "Segoe Ui", "Trebuchet Ms", sans-serif;
   font-weight: normal;
+}
+
+h2, h3 {
+  padding: 1rem 0 0;
 }
 
 .wf-active h1,
@@ -187,13 +190,13 @@ a {
   word-spacing: -1px;
 }
 
-.header a,
-.footer a {
+.bg-dark .header a,
+.bg-dark .footer a {
   color: $baseD7;
 }
 
-.header a:hover,
-.footer a:hover {
+.bg-dark .header a:hover,
+.bg-dark .footer a:hover {
   color: $baseD6;
 }
 
@@ -207,8 +210,37 @@ a {
   color: adjust-color($baseD7, $saturation: 5%, $lightness: 10%);
 }
 
-.header h1 .small {
-  color: $baseB7;
+// .header h1 .small {
+//   color: $baseB7;
+// }
+
+// logo
+.logo {
+  // width: 208px;
+  width: 288px;
+  display: inline-block;
+  vertical-align: middle;
+
+  @media(min-width: 690px) {
+    width: 555px;
+  }
+}
+
+.bg-dark [id*="logo-glyphs"] {
+  fill: $baseD7;
+}
+
+.bg-light [id*="logo-glyphs"] {
+  // fill: adjust-color($baseD7, $lightness: 20%);
+  fill: adjust-color($baseB6, $lightness: 7%);
+}
+
+.bg-dark [id="logo-glyphs-2"] {
+  fill: $baseB6;
+}
+
+.bg-light [id="logo-glyphs-2"] {
+  fill: adjust-color($baseD7, $lightness: 5%);
 }
 
 // nav
@@ -784,6 +816,16 @@ button::-moz-focus-inner, input::-moz-focus-inner, button::-webkit-focus-inner, 
   min-height: 300px;
 }
 
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 
 @media (min-width:750px) {
 
