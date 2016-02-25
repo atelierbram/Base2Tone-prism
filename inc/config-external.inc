@@ -1,1 +1,1 @@
-<?php $rootUrl="http://atelierbram.github.io/duotone-prism"; ?>
+<?php $rootUrl="http://atelierbram.github.io/Base2Tone-prism"; ?>

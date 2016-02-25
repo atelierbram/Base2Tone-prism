@@ -1,8 +1,9 @@
-# DuoTones Prism
+#
+DuoTones Prism
 Generate syntax-highlighting schemes for Prism with color variations from 2 colors
 
 ### Demo
-[Go see the Demo](http://atelierbram.github.io/duotones-prism/demo/evening/dark/) for Prism.
+[Go see the Demo](http://atelierbram.github.io/Base2Tone-prism/demo/evening/dark/) for Prism.
 
 Some customized commands from the latest fork of [Base16 Builder](https://github.com/base16-builder/base16-builder) can be found in an executable bash script (`io.sh`). Typing `io.sh` and hitting enter from the command line in the root folder, will output the gererated Prism code-highlighting files in the `output/prism` folder. They all come in a dark and light variation, though most were originally conceived as dark background themes.
 

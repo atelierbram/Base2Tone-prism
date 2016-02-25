@@ -1,1 +1,1 @@
-<?php $rootUrl="http://localhost/~bram/bitbucket/duotones-prism"; ?>
+<?php $rootUrl="http://localhost/~bram/github.com/atelierbram/Base2Tone-prism"; ?>
