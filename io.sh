@@ -3,20 +3,22 @@
 # write to file
 overwrite_to_file()
 {
-  base16-builder --scheme "db/schemes/duotones-evening.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-duotones-evening-dark.css"
-  base16-builder --scheme "db/schemes/duotones-evening.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-duotones-evening-light.css"
-  base16-builder --scheme "db/schemes/duotones-morning.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-duotones-morning-dark.css"
-  base16-builder --scheme "db/schemes/duotones-morning.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-duotones-morning-light.css"
-  base16-builder --scheme "db/schemes/duotones-space.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-duotones-space-dark.css"
-  base16-builder --scheme "db/schemes/duotones-space.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-duotones-space-light.css"
-  base16-builder --scheme "db/schemes/duotones-sea.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-duotones-sea-dark.css"
-  base16-builder --scheme "db/schemes/duotones-sea.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-duotones-sea-light.css"
-  base16-builder --scheme "db/schemes/duotones-forest.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-duotones-forest-dark.css"
-  base16-builder --scheme "db/schemes/duotones-forest.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-duotones-forest-light.css"
-  base16-builder --scheme "db/schemes/duotones-earth.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-duotones-earth-dark.css"
-  base16-builder --scheme "db/schemes/duotones-earth.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-duotones-earth-light.css"
-  base16-builder --scheme "db/schemes/duotones-desert.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-duotones-desert-dark.css"
-  base16-builder --scheme "db/schemes/duotones-desert.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-duotones-desert-light.css"
+  base16-builder --scheme "db/schemes/base2tone-evening.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-base2tone-evening-dark.css"
+  base16-builder --scheme "db/schemes/base2tone-evening.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-base2tone-evening-light.css"
+  base16-builder --scheme "db/schemes/base2tone-morning.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-base2tone-morning-dark.css"
+  base16-builder --scheme "db/schemes/base2tone-morning.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-base2tone-morning-light.css"
+  base16-builder --scheme "db/schemes/base2tone-space.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-base2tone-space-dark.css"
+  base16-builder --scheme "db/schemes/base2tone-space.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-base2tone-space-light.css"
+  base16-builder --scheme "db/schemes/base2tone-sea.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-base2tone-sea-dark.css"
+  base16-builder --scheme "db/schemes/base2tone-sea.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-base2tone-sea-light.css"
+  base16-builder --scheme "db/schemes/base2tone-forest.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-base2tone-forest-dark.css"
+  base16-builder --scheme "db/schemes/base2tone-forest.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-base2tone-forest-light.css"
+  base16-builder --scheme "db/schemes/base2tone-earth.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-base2tone-earth-dark.css"
+  base16-builder --scheme "db/schemes/base2tone-earth.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-base2tone-earth-light.css"
+  base16-builder --scheme "db/schemes/base2tone-desert.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-base2tone-desert-dark.css"
+  base16-builder --scheme "db/schemes/base2tone-desert.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-base2tone-desert-light.css"
+  base16-builder --scheme "db/schemes/base2tone-pool.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-base2tone-pool-dark.css"
+  base16-builder --scheme "db/schemes/base2tone-pool.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-base2tone-pool-light.css"
  }
 
 # execute it

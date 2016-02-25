@@ -554,7 +554,7 @@ nav ul {
 }
 
 .js .nav-themes {
-  @media (min-width:640px) {
+  @media(min-width:640px) {
     margin-top: 3em;
   }
 }
@@ -577,7 +577,7 @@ nav ul {
 
 .js .nav-themes-hidden {
 
-  @media (max-width:639px) {
+  @media(max-width:639px) {
     height: 0;
   }
 }

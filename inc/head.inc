@@ -6,8 +6,8 @@
     <title>Duotones - <?php echo $title; ?></title>
   <meta name="description" content="<?php echo $description; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../../assets/css/demo-tiles/base32-duotones-<?php echo $theme; ?>.css">
-    <link rel="stylesheet" href="../../../output/prism/prism-duotones-<?php echo $theme; ?>-<?php echo $bg; ?>.css">
+    <link rel="stylesheet" href="../../../assets/css/demo-tiles/base2tone-<?php echo $theme; ?>.css">
+    <link rel="stylesheet" href="../../../output/prism/prism-base2tone-<?php echo $theme; ?>-<?php echo $bg; ?>.css">
 <script><?php include "../../inc/head-detect-js.inc"; ?></script>
   </head>
   <body>
