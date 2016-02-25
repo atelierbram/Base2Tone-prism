@@ -44,6 +44,8 @@ domready(function() {
     var dtHeader = document.getElementById("demo-tilesHeader");
     var toggleBtn1 = document.createElement("button");
     var numberShades = document.getElementById("numberShades");
+    var demoTilesId = document.getElementById("demo-tiles-id");
+ demo-tiles-id
     toggleBtn1.innerHTML = "show colornames";
     toggleBtn1.setAttribute("class", "button button-16");
     toggleBtn1.setAttribute("data-text-swap", "hide colornames");
@@ -63,6 +65,11 @@ domready(function() {
         else {
             toggleBtn1.setAttribute("data-text-original", toggleBtn1.innerHTML);
             toggleBtn1.innerHTML = toggleBtn1.getAttribute("data-text-swap")
+        }
+        if (demoTilesId.getAttribute("data-text-swap") == demoTilesId.innerHTML) demoTilesId.innerHTML = demoTilesId.getAttribute("data-text-original");
+        else {
+            demoTilesId.setAttribute("data-text-original", demoTilesId.innerHTML);
+            demoTilesId.innerHTML = demoTilesId.getAttribute("data-text-swap")
         }
         if (numberShades.getAttribute("data-text-swap") == numberShades.innerHTML) numberShades.innerHTML = numberShades.getAttribute("data-text-original");
         else {
