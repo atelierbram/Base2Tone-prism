@@ -27,7 +27,7 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  background: #2a2734;
+  background: #1e2138;
   color: #7178bc;
 }
 
@@ -60,11 +60,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #6c6783;
+  color: #51557b;
 }
 
 .token.punctuation {
-  color: #6c6783;
+  color: #51557b;
 }
 
 .token.namespace {
