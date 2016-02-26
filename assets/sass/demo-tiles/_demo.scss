@@ -142,7 +142,7 @@ a {
 }
 
 .bg-light .github-corner svg[style] {
-  color: $baseC2 !important;
+  color: $baseC0 !important;
 }
 
 .bg-light .github-corner:hover svg[style] {
@@ -158,7 +158,7 @@ a {
 }
 
 .bg-light .header {
-  background: $baseC2;
+  background: $baseC0;
 }
 
 .bg-light .footer {
@@ -391,15 +391,13 @@ nav ul {
 }
 
 .bg-light .nav-variation_list a {
-  background-color: $baseC2;
+  background-color: $baseC0;
   color: $baseB7;
-  // border-top-color: adjust-color($baseC2, $lightness: 5%);
-  // border-bottom-color: adjust-color($baseC2, $lightness: -5%);
-  border-top-color: $baseC1;
-  border-bottom-color: $baseC1;
+  border-top-color: adjust-color($baseC0, $lightness: 5%);
+  border-bottom-color: adjust-color($baseC0, $lightness: -5%);
 
   &:hover {
-    background-color: adjust-color($baseC2, $lightness: -2.5%);
+    background-color: adjust-color($baseC0, $lightness: -2.5%);
   }
 
 }
