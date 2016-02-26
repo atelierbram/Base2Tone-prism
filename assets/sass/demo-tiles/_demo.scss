@@ -573,6 +573,12 @@ nav ul {
   }
 }
 
+.no-flexbox .content {
+  @media(min-width: 640px) {
+    width: auto;
+  }
+}
+
 .js .has-themes-hidden {
   width: 100%;
 }
@@ -607,6 +613,13 @@ nav ul {
   }
 }
 
+.no-flexbox .nav-themes-open {
+  @media(min-width: 640px) {
+    float: left;
+    margin-right: 3em;
+  }
+}
+
 .nav-themes-hidden {
   width: 0;
   overflow: hidden;
@@ -625,6 +638,7 @@ nav ul {
 }
 
 .nav-themes_list a {
+  display: block;
   display: flex;
   padding: .5em 1em;
 }
