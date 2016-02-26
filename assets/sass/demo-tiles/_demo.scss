@@ -331,6 +331,8 @@ nav ul {
 }
 
 .no-flexbox .nav-variation_list {
+  display: block;
+
   @media(min-width: 640px) {
     float: right;
   }
@@ -364,6 +366,7 @@ nav ul {
 
 .nav-variation_list a {
   padding: .75em 1em;
+  display: block;
   display: flex;
 
   @media(min-width: 640px) {
