@@ -190,37 +190,32 @@ a {
   word-spacing: -1px;
 }
 
-.header a,
-// .bg-dark .header a,
+.bg-dark .header a,
 .bg-dark .footer a {
-  // color: $baseD7;
   color: $baseD3;
   transition: all .3s;
+  &:hover {
+    color: $baseD6;
+  }
 }
 
-.header a:hover,
-// .bg-dark .header a:hover,
-.bg-dark .footer a:hover {
-  color: $baseD6;
+.bg-light .header a {
+  // color: $baseD7;
+    color: adjust-color($baseD7, $lightness: 5%);
+  &:hover {
+    color: adjust-color($baseD7, $lightness: 10%);
+  }
 }
 
-// .bg-light .header a,
 .bg-light .footer a {
   color: adjust-color($baseD7, $lightness: 20%);
+  &:hover {
+    color: adjust-color($baseD7, $lightness: 10%);
+  }
 }
-
-// .bg-light .header a:hover,
-.bg-light .footer a:hover {
-  color: adjust-color($baseD7, $saturation: 5%, $lightness: 10%);
-}
-
-// .header h1 .small {
-//   color: $baseB7;
-// }
 
 // logo
 .logo {
-  // width: 208px;
   width: 288px;
   display: inline-block;
   vertical-align: middle;
@@ -231,12 +226,11 @@ a {
 }
 
 .bg-dark [id*="logo-glyphs"] {
-  fill: $baseB7;
+  fill: $baseB6;
 }
 
 .bg-light [id*="logo-glyphs"] {
-  // fill: adjust-color($baseD7, $lightness: 20%);
-  fill: adjust-color($baseB6, $lightness: 7%);
+  fill: $baseB7;
 }
 
 .bg-dark [id="logo-glyphs-2"] {
@@ -249,19 +243,10 @@ a {
 
 [class*="bg-"] [id*="-inner"],
 [class*="bg-"] [id*="-gt-"] path {
-  // fill: $baseD3;
   fill: currentColor;
 }
 
-// [class*="bg-"] [id="logo-glyphs-gt-2"] path {
-//   fill: $baseD7;
-// }
-
-[class*="bg-"] [id="logo-glyphs-gt-1"] path {
-  // fill: transparent;
-  opacity: 0;
-}
-
+[class*="bg-"] [id="logo-glyphs-gt-1"] path,
 [class*="bg-"] [id*="-inner"] path {
   opacity: 0;
 }
