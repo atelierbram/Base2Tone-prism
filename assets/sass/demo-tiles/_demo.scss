@@ -356,10 +356,15 @@ nav ul {
   letter-spacing: 1px;
 }
 
+.nav_toggle-themes .btn-text,
+.nav-variation_list a,
+.demo-tiles-header-text b {
+  text-transform: capitalize;
+}
+
 .nav-variation_list a {
   padding: .75em 1em;
   display: flex;
-  text-transform: capitalize;
 
   @media(min-width: 640px) {
     border: none;
@@ -508,7 +513,6 @@ nav ul {
 }
 
 .nav_toggle-themes .btn-text {
-  text-transform: capitalize;
   padding-right: .25em;
 }
 
