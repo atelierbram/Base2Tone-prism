@@ -3,7 +3,7 @@
 <html lang="en" class="no-js core no-flexbox wf-inactive bg-<?php echo $bg; ?>">
   <head>
     <meta charset="utf-8">
-    <title>Duotones - <?php echo $title; ?></title>
+    <title>Base2Tone - <?php echo $title; ?></title>
   <meta name="description" content="<?php echo $description; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../../assets/css/demo-tiles/base2tone-<?php echo $theme; ?>.css">
