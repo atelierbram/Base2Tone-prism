@@ -198,12 +198,29 @@ a {
     color: $baseD6;
   }
 }
+.theme-morning-dark .header a,
+.theme-earth-dark .header a {
+   color: $baseD7;
+  &:hover {
+    color: adjust-color($baseD7, $lightness: 5%);
+  }
+}
 
 .bg-light .header a {
   // color: $baseD7;
-    color: adjust-color($baseD7, $lightness: 5%);
+    // color: adjust-color($baseD7, $lightness: 5%);
+    color: $baseD7;
   &:hover {
-    color: adjust-color($baseD7, $lightness: 10%);
+    color: adjust-color($baseD7, $lightness: 5%);
+  }
+}
+
+.theme-morning-light .header a,
+.theme-earth-light .header a,
+.theme-forest-light .header a {
+   color: $baseD4;
+  &:hover {
+    color: adjust-color($baseD4, $lightness: 5%);
   }
 }
 
@@ -531,7 +548,7 @@ nav ul {
 
 // themes toggle
 .nav_toggle-themes {
-  background-color: $baseC0;
+  // background-color: $baseC0;
   background-position: .25em center;
   border-bottom-right-radius: 3px;
 
@@ -548,11 +565,15 @@ nav ul {
 }
 
 .bg-dark .nav_toggle-themes {
-  background-color: $baseA1;
+  @media(min-width: 640px) {
+    background-color: $baseA1;
+  }
 }
 
 .bg-light .nav_toggle-themes {
-  background-color: $baseC0;
+  @media(min-width: 640px) {
+    background-color: adjust-color($baseC0, $lightness: -5%);
+  }
 }
 
 // end menu
@@ -659,7 +680,7 @@ nav ul {
 .unit {
   float: left;
   width: 12.5%;
-  padding: .75em 0;
+  padding: .5em 0;
   text-align: center;
   transition: .3s all;
 }
