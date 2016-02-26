@@ -190,22 +190,26 @@ a {
   word-spacing: -1px;
 }
 
-.bg-dark .header a,
+.header a,
+// .bg-dark .header a,
 .bg-dark .footer a {
-  color: $baseD7;
+  // color: $baseD7;
+  color: $baseD3;
+  transition: all .3s;
 }
 
-.bg-dark .header a:hover,
+.header a:hover,
+// .bg-dark .header a:hover,
 .bg-dark .footer a:hover {
   color: $baseD6;
 }
 
-.bg-light .header a,
+// .bg-light .header a,
 .bg-light .footer a {
   color: adjust-color($baseD7, $lightness: 20%);
 }
 
-.bg-light .header a:hover,
+// .bg-light .header a:hover,
 .bg-light .footer a:hover {
   color: adjust-color($baseD7, $saturation: 5%, $lightness: 10%);
 }
@@ -227,7 +231,7 @@ a {
 }
 
 .bg-dark [id*="logo-glyphs"] {
-  fill: $baseD7;
+  fill: $baseB7;
 }
 
 .bg-light [id*="logo-glyphs"] {
@@ -242,6 +246,52 @@ a {
 .bg-light [id="logo-glyphs-2"] {
   fill: adjust-color($baseD7, $lightness: 5%);
 }
+
+[class*="bg-"] [id*="-inner"],
+[class*="bg-"] [id*="-gt-"] path {
+  // fill: $baseD3;
+  fill: currentColor;
+}
+
+// [class*="bg-"] [id="logo-glyphs-gt-2"] path {
+//   fill: $baseD7;
+// }
+
+[class*="bg-"] [id="logo-glyphs-gt-1"] path {
+  // fill: transparent;
+  opacity: 0;
+}
+
+[class*="bg-"] [id*="-inner"] path {
+  opacity: 0;
+}
+
+.domready [id*="-inner"] path,
+.domready [id*="-gt-"] path {
+  animation: glyph-opacity 3s infinite linear;
+}
+
+.domready [id="logo-glyphs-tone-inner"] path,
+.domready [id="logo-glyphs-gt-1"] path {
+  animation-delay: 1.5s;
+}
+
+// css-animations
+@keyframes glyph-opacity {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+}
+
 
 // nav
 nav ul {
