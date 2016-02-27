@@ -2,7 +2,7 @@
 domready(function() {
     var navVariation = document.getElementById("navVariation");
     var navBtn = document.createElement("a");
-    navBtn.setAttribute("href", "#");
+    navBtn.setAttribute("href", "#!");
     navBtn.setAttribute("class", "nav_toggle nav_toggle-variation");
     navBtn.insertAdjacentHTML("beforeend", '<span class="btn-text">light-dark variation</span>');
     navVariation.insertBefore(navBtn, navVariation.firstChild);
@@ -30,7 +30,7 @@ domready(function() {
     var navBtnThemes = document.createElement("a");
     var content = document.getElementById("content");
 
-    navBtnThemes.setAttribute("href", "#");
+    navBtnThemes.setAttribute("href", "#!");
     navBtnThemes.setAttribute("class", "nav_toggle nav_toggle-themes");
     navBtnThemes.insertAdjacentHTML("beforeend", '<span class="btn-text">themes</span>');
     navThemes.insertBefore(navBtnThemes, navThemes.firstChild);

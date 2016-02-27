@@ -175,6 +175,9 @@ a {
 
 .header p {
   font-size: 1em;
+  @media(max-width: 640px) {
+    font-size: .875em;
+  }
 }
 
 .header p,
