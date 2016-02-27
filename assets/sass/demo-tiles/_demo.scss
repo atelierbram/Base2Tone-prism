@@ -674,6 +674,7 @@ nav ul {
 .demo-tiles {
   overflow: hidden;
   margin-bottom: 3em;
+  height: 160px; // stop from rescaling after button hit
 }
 
 .demo-tiles.collapsed span {
