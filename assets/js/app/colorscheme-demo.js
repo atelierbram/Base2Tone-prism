@@ -56,7 +56,7 @@ domready(function() {
             el.classList.toggle("hidden")
         });
         [].map.call(document.querySelectorAll(".shade-original"), function(el) {
-            el.classList.toggle("w-1v4")
+            el.classList.toggle("w-1v3")
         });
         [].map.call(document.querySelectorAll(".demo-tiles"), function(el) {
             el.classList.toggle("collapsed")

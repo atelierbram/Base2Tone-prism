@@ -13,7 +13,7 @@
  <li class='<?php if ($theme=="lake") echo "current"; ?> li-lake'><a href="../../lake/dark/">Lake</a></li>
  <li class='<?php if ($theme=="pool") echo "current"; ?> li-pool'><a href="../../pool/dark/">Pool</a></li>
 <!--  <li class='<?php // if ($theme=="heath") echo "current"; ?> li-heath'><a href="../../heath/dark/">Heath</a></li> -->
-<!--  <li class='<?php // if ($theme=="cave") echo "current"; ?> li-cave'><a href="../../cave/dark/">Cave</a></li> -->
+ <li class='<?php if ($theme=="cave") echo "current"; ?> li-cave'><a href="../../cave/dark/">Cave</a></li>
   </ul>
 </nav>
 <?php ob_end_flush(); function compress_nav($buffer) {
