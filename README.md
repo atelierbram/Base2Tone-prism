@@ -1,4 +1,4 @@
-# DuoTones Prism
+# Base2Tone Prism
 Generate syntax-highlighting schemes for Prism with color variations from 2 colors with [Base2Tone](http://github.com/atelierbram/Base2Tone).
 
 ### Demo
