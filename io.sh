@@ -19,6 +19,8 @@ overwrite_to_file()
   base16-builder --scheme "db/schemes/base2tone-desert.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-base2tone-desert-light.css"
   base16-builder --scheme "db/schemes/base2tone-pool.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-base2tone-pool-dark.css"
   base16-builder --scheme "db/schemes/base2tone-pool.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-base2tone-pool-light.css"
+  base16-builder --scheme "db/schemes/base2tone-lake.yml" --template "db/templates/prism/dark.nunjucks" > "output/prism/prism-base2tone-lake-dark.css"
+  base16-builder --scheme "db/schemes/base2tone-lake.yml" --template "db/templates/prism/light.nunjucks" > "output/prism/prism-base2tone-lake-light.css"
  }
 
 # execute it

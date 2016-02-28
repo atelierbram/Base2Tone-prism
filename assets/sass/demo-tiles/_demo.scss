@@ -228,7 +228,7 @@ a {
 }
 
 .bg-light .footer a {
-  color: adjust-color($baseD7, $lightness: 20%);
+  color: adjust-color($baseD7, $lightness: 0%);
   &:hover {
     color: adjust-color($baseD7, $lightness: 10%);
   }
