@@ -1,6 +1,6 @@
 /*
 
-Name:       Base2Tone-Cave Light
+Name:       Base2Tone-Pool Dark
 Author:     adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
 
 Prism template for Base2Tone by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/prism/)
@@ -27,20 +27,20 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  background: #fbfaf9;
-  color: #d27998;
+  background: #222022;
+  color: #9a819c;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: #fbfaf9;
+  background: #a21fad;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
-  background: #fbfaf9;
+  background: #a21fad;
 }
 
 /* Code blocks */
@@ -60,11 +60,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #c5c0b5;
+  color: #655c66;
 }
 
 .token.punctuation {
-  color: #c5c0b5;
+  color: #655c66;
 }
 
 .token.namespace {
@@ -74,23 +74,23 @@ pre[class*="language-"] {
 .token.tag,
 .token.operator,
 .token.number {
-  color: #ad1f51;
+  color: #b87414;
 }
 
 .token.property,
 .token.function {
-  color: #cca133;
+  color: #9a819c;
 }
 
 .token.tag-id,
 .token.selector,
 .token.atrule-id {
-  color: #996e00;
+  color: #fdebff;
 }
 
 code.language-javascript,
 .token.attr-name {
-  color: #b88914;
+  color: #db8de2;
 }
 
 code.language-css,
@@ -110,12 +110,12 @@ code.language-scss,
 .token.statement,
 .token.regex,
 .token.atrule {
-  color: #d27998;
+  color: #ffd599;
 }
 
 .token.placeholder,
 .token.variable {
-  color: #e28dab;
+  color: #ffd599;
 }
 
 .token.deleted {
@@ -123,7 +123,7 @@ code.language-scss,
 }
 
 .token.inserted {
-  border-bottom: 1px dotted #996e00;
+  border-bottom: 1px dotted #fdebff;
   text-decoration: none;
 }
 
@@ -137,7 +137,7 @@ code.language-scss,
 }
 
 .token.important {
-  color: #b88914;
+  color: #8f6c93;
 }
 
 .token.entity {
@@ -145,7 +145,7 @@ code.language-scss,
 }
 
 pre > code.highlight {
-  outline: .4em solid #b88914;
+  outline: .4em solid #8f6c93;
   outline-offset: .4em;
 }
 
