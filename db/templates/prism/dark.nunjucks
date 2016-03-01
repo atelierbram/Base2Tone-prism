@@ -137,7 +137,7 @@ code.language-scss,
 }
 
 .token.important {
-  color: #{{ base["B2"]["hex"] }};
+  color: #{{ base["B5"]["hex"] }};
 }
 
 .token.entity {
