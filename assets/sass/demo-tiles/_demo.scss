@@ -227,6 +227,14 @@ a {
   }
 }
 
+.theme-cave-light .header a,
+.theme-heath-light .header a {
+  color: $baseD5;
+  &:hover {
+    color: adjust-color($baseD5, $lightness: 5%);
+  }
+}
+
 .bg-light .footer a {
   color: adjust-color($baseD7, $lightness: 0%);
   &:hover {

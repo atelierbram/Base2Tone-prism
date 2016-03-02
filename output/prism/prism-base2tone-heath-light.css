@@ -60,11 +60,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #c3beb6;
+  color: #c1bdb9;
 }
 
 .token.punctuation {
-  color: #c3beb6;
+  color: #c1bdb9;
 }
 
 .token.namespace {
