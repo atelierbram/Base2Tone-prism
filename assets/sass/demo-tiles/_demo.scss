@@ -253,6 +253,10 @@ a {
   }
 }
 
+svg {
+  max-width: 100%;
+}
+
 .bg-dark [id*="logo-glyphs"] {
   fill: $baseB6;
 }
