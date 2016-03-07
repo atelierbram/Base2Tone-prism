@@ -83,6 +83,18 @@ body {
   box-sizing: border-box;
 }
 
+section {
+  padding-bottom: 5em;
+}
+
+// override inital hiding in head styles
+nav,
+.container-flex,
+h3,
+section {
+  opacity: 1;
+}
+
 .wf-active body,
 .wf-active button {
   font-family: Overpass, AvenirNext-Regular, "Lucida Grande", "Segoe Ui", "Trebuchet Ms", sans-serif;

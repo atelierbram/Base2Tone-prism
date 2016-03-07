@@ -1,4 +1,5 @@
 <?php ?>
+<section class="code-samples">
         <div class="col">
           <h3>HTML</h3>
           <pre class="language-markup"><code>&lt;!doctype html&gt;
@@ -18,7 +19,8 @@
         </div>
         <div class="col">
           <h3>CSS</h3>
-          <pre class="language-css"><code>h1 {
+          <pre class="language-css"><code>/* comment */
+h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -156,4 +158,5 @@ end</code></pre></div>
         self.encoding = encoding
         if _debug: sys.stderr.write(&#39;entering BaseHTMLProcessor, encoding=%s\n&#39; % self.encoding)
         sgmllib.SGMLParser.__init__(self)</code></pre></div>
+</section>
 <?php ?>

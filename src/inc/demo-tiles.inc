@@ -1,5 +1,5 @@
 <?php ob_start('compress_tiles'); ?>
-        <div id="demoTiles" class="demo-tiles collapsed">
+        <section id="demoTiles" class="demo-tiles collapsed">
           <div class="unit bg-baseA0 shade-original w-1v3"><span>A0</span></div>
           <div class="unit bg-baseA1 shade-added hidden"><span>A1</span></div>
           <div class="unit bg-baseA2 shade-original w-1v3"><span>A2</span></div>
@@ -35,7 +35,7 @@
           <div class="unit bg-baseD5 shade-added hidden"><span>D5</span></div>
           <div class="unit bg-baseD6 shade-added hidden"><span>D6</span></div>
           <div class="unit bg-baseD7 shade-original w-1v3"><span>D7</span></div>
-        </div>
+        </section>
 <?php ob_end_flush(); function compress_tiles($buffer) {
   $search = array("/>[[:space:]]+/", "/[[:space:]]+</");
   $replace = array(">","<");
