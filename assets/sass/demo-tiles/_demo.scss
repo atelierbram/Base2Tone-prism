@@ -40,7 +40,8 @@
 // https://github.com/RedHatBrand/overpass
 @font-face {
   font-family: 'Overpass';
-  src: url('../../fonts/overpass/Overpass-Light.woff') format('woff'),
+  src: url('../../fonts/overpass/Overpass-Light.woff2') format('woff2'),
+  url('../../fonts/overpass/Overpass-Light.woff') format('woff'),
   url('../../fonts/overpass/Overpass-Light.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;

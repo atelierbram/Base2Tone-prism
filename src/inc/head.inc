@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style><?php include "../../inc/demo-head-css.inc"; ?></style>
     <link rel="preload" href="../../../assets/css/demo-tiles/base2tone-<?php echo $theme; ?>.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="../../../output/prism/prism-base2tone-<?php echo $theme; ?>-<?php echo $bg; ?>.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="../../../output/prism/prism-base2tone-<?php echo $theme; ?>-<?php echo $bg; ?>.css" as="style" onload="this.rel='stylesheet'"> 
+    <noscript><link rel="stylesheet" href="../../../assets/css/demo-tiles/base2tone-<?php echo $theme; ?>.css" ></noscript>
+    <noscript><link rel="stylesheet" href="../../../output/prism/prism-base2tone-<?php echo $theme; ?>-<?php echo $bg; ?>.css"></noscript>
 <script><?php include "../../inc/head-detect-js.inc"; ?></script>
   </head>
     <body class="theme-<?php echo $id; ?>">
