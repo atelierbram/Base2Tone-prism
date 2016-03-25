@@ -1,7 +1,7 @@
 /*
 
-Name:       {{ scheme }} Light
-Author:     {{ author }}
+Name:       {{ scheme %> Light
+Author:     {{ author %>
 
 Prism template for Base2Tone by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/prism/)
 Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
@@ -27,20 +27,20 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  background: #{{ base["C7"]["hex"] }};
-  color: #{{ base["B4"]["hex"] }};
+  background: #<%- base["C7"]["hex"] %>;
+  color: #<%- base["B4"]["hex"] %>;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: #{{ base["C7"]["hex"] }};
+  background: #<%- base["C7"]["hex"] %>;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
-  background: #{{ base["C7"]["hex"] }};
+  background: #<%- base["C7"]["hex"] %>;
 }
 
 /* Code blocks */
@@ -60,11 +60,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #{{ base["C4"]["hex"] }};
+  color: #<%- base["C4"]["hex"] %>;
 }
 
 .token.punctuation {
-  color: #{{ base["C4"]["hex"] }};
+  color: #<%- base["C4"]["hex"] %>;
 }
 
 .token.namespace {
@@ -74,23 +74,23 @@ pre[class*="language-"] {
 .token.tag,
 .token.operator,
 .token.number {
-  color: #{{ base["B0"]["hex"] }};
+  color: #<%- base["B0"]["hex"] %>;
 }
 
 .token.property,
 .token.function {
-  color: #{{ base["D4"]["hex"] }};
+  color: #<%- base["D4"]["hex"] %>;
 }
 
 .token.tag-id,
 .token.selector,
 .token.atrule-id {
-  color: #{{ base["D0"]["hex"] }};
+  color: #<%- base["D0"]["hex"] %>;
 }
 
 code.language-javascript,
 .token.attr-name {
-  color: #{{ base["D2"]["hex"] }};
+  color: #<%- base["D2"]["hex"] %>;
 }
 
 code.language-css,
@@ -110,12 +110,12 @@ code.language-scss,
 .token.statement,
 .token.regex,
 .token.atrule {
-  color: #{{ base["B4"]["hex"] }};
+  color: #<%- base["B4"]["hex"] %>;
 }
 
 .token.placeholder,
 .token.variable {
-  color: #{{ base["B5"]["hex"] }};
+  color: #<%- base["B5"]["hex"] %>;
 }
 
 .token.deleted {
@@ -123,7 +123,7 @@ code.language-scss,
 }
 
 .token.inserted {
-  border-bottom: 1px dotted #{{ base["D0"]["hex"] }};
+  border-bottom: 1px dotted #<%- base["D0"]["hex"] %>;
   text-decoration: none;
 }
 
@@ -137,7 +137,7 @@ code.language-scss,
 }
 
 .token.important {
-  color: #{{ base["D2"]["hex"] }};
+  color: #<%- base["D2"]["hex"] %>;
 }
 
 .token.entity {
@@ -145,6 +145,6 @@ code.language-scss,
 }
 
 pre > code.highlight {
-  outline: .4em solid #{{ base["D2"]["hex"] }};
+  outline: .4em solid #<%- base["D2"]["hex"] %>;
   outline-offset: .4em;
 }
