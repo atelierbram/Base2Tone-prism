@@ -16,7 +16,7 @@ $ npm install --global base16-builder
 Typing `io.sh` and hitting enter from the command line in the root folder, will output the gererated Prism code-highlighting files in the `output/prism` folder. They all come in a dark and light variation, though most were originally conceived as dark background themes.
 
 ```bash
-base16-builder --scheme schemes/duotones-evening.yml --template templates/prism/dark.nunjucks > output/prism/prism-duotones-evening-dark.css
+base16-builder --scheme schemes/duotones-evening.yml --template templates/prism/dark.ejs > output/prism/prism-duotones-evening-dark.css
 ```
 
 ### Create your own colorscheme.
