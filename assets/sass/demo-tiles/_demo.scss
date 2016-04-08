@@ -257,10 +257,15 @@ a {
 
 // logo
 .logo {
-  width: 288px;
+  position: relative;
   display: inline-block;
   vertical-align: middle;
 
+  @media(min-width: 320px) {
+    width: 288px;
+    height: 0;
+    padding-bottom: 20%;
+  }
   @media(min-width: 690px) {
     width: 555px;
   }
@@ -268,6 +273,16 @@ a {
 
 svg {
   max-width: 100%;
+}
+
+.logo svg {
+  @media(max-width: 319px) {
+    display: none;
+  }
+  @media(min-width: 320px) {
+    position: absolute;
+    top:0;right:0;bottom:0;left:0;
+  }
 }
 
 .bg-dark [id*="logo-glyphs"] {
@@ -308,7 +323,7 @@ svg {
 .domready [id="logo-glyphs-gt-1"] path {
   animation-delay: 1.5s;
 }
- 
+
 // css-animations
 @keyframes glyph-opacity {
   0% {
@@ -416,6 +431,7 @@ nav ul {
   padding: .75em 1em;
   display: block;
   display: flex;
+  white-space: nowrap;
 
   @media(min-width: 640px) {
     border: none;
@@ -927,15 +943,17 @@ button::-moz-focus-inner, input::-moz-focus-inner, button::-webkit-focus-inner, 
   min-height: 300px;
 }
 
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+.header .visuallyhidden {
+  @media (min-width:320px) {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
 }
 
 @media (min-width:750px) {
