@@ -831,6 +831,8 @@ h3 {
   max-height: 300px;
   border-radius: 5px;
   line-height: 1.4;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 // webkit custom scrollbars for dark background (... mostly for horizontal on smaller screens)
