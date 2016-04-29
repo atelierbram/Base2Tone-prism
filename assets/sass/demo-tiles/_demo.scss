@@ -166,7 +166,7 @@ a {
   background: $baseA2;
 }
 
-.bg-dark .footer {
+.footer {
   background: $baseA1;
 }
 
@@ -174,12 +174,8 @@ a {
   background: $baseC0;
 }
 
-.bg-light .footer {
-  background: $baseC1;
-}
-
 .header {
-  padding: 3em 1em 1em 0;
+  padding: 3em 0 1em;
   @media(min-width: 320px) {
     padding-bottom: 0;
   }
@@ -264,15 +260,14 @@ a {
   vertical-align: middle;
 
   @media(min-width: 320px) {
-    width: 288px;
-    width: calc(100vw - 2em);
+    // width: calc(100vw - 2em);
+    width: 100vw;
     height: 0;
     padding-bottom: 39.28571428571429%;
   }
-  @media(min-width: 640px) {
-    width: 555px;
-    width: 100vw;
-  }
+  // @media(min-width: 640px) {
+  //   width: 100vw;
+  // }
 }
 
 svg {
@@ -289,18 +284,26 @@ svg {
   }
 }
 
-[id="app-name"] text {
+.bg-light [id="bg-bottom"] rect {
+  fill: $baseC7;
+}
+
+.bg-dark [id="bg-bottom"] rect {
   fill: $baseA1;
+}
+
+.bg-light [id="app-name"] text {
+  fill: $baseA1;
+}
+
+.bg-dark [id="app-name"] text {
+  fill: $baseC7;
 }
 
 [id="bg"] rect {
   fill: $baseB7;
 }
 
-[id="bg-bottom"] rect {
-  // fill: adjust-color($baseB7, $lightness: 1.5%);
-  fill: $baseC7;
-}
 
 [id="bg-inner-bottom"] polygon {
   fill: $baseB5;
@@ -314,21 +317,9 @@ svg {
   fill: currentColor;
 }
 
-// .bg-light [id*="logo-glyphs"] path {
-//   fill: $baseB7;
-// }
-
-// .bg-dark [id="logo-glyphs-2"] {
-//   fill: $baseB6;
-// }
-//
-// .bg-light [id="logo-glyphs-2"] {
-//   fill: adjust-color($baseD7, $lightness: 5%);
-// }
 
 [class*="bg-"] [id*="-shadow"] path,
 [class*="bg-"] [id*="-inner"] path {
-  // fill: currentColor;
   fill: $baseA2;
 }
 
@@ -464,13 +455,13 @@ nav ul {
 }
 
 .bg-dark .nav-variation_list a {
-  background-color: $baseA2;
-  color: $baseD6;
-  border-top-color: adjust-color($baseA2, $lightness: -2.5%);
-  border-top-color: adjust-color($baseA2, $lightness: -2.5%);
+  background-color: $baseC7;
+  color: $baseA2;
+  border-top-color: adjust-color($baseC2, $lightness: -2.5%);
+  border-bottom-color: adjust-color($baseC2, $lightness: -2.5%);
 
   &:hover {
-    background-color: adjust-color($baseA2, $lightness: -2.5%);
+    background-color: $baseC6;
   }
 }
 
