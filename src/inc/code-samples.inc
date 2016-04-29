@@ -159,4 +159,5 @@ end</code></pre></div>
         if _debug: sys.stderr.write(&#39;entering BaseHTMLProcessor, encoding=%s\n&#39; % self.encoding)
         sgmllib.SGMLParser.__init__(self)</code></pre></div>
 </section>
+<section class="download"><a href="http://atelierbram.github.io/Base2Tone-prism/output/prism/prism-base2tone-<?php echo $id; ?>.css" class="button">download theme</a></section>
 <?php ?>

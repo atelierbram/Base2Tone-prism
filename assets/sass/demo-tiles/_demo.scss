@@ -97,7 +97,8 @@ section {
 }
 
 .wf-active body,
-.wf-active button {
+.wf-active button,
+.wf-active .button {
   font-family: Overpass, AvenirNext-Regular, "Lucida Grande", "Segoe Ui", "Trebuchet Ms", sans-serif;
 }
 
@@ -807,7 +808,8 @@ nav ul {
   color: $baseC0;
 }
 
-.demo-tiles-header .button {
+.demo-tiles-header .button,
+.download .button {
   float: right;
 }
 
@@ -906,7 +908,8 @@ h3 {
   background-color: transparent;
 }
 
-button {
+button,
+.button {
   -webkit-appearance: none;
   overflow: visible;
   border-radius: 4px;
@@ -929,17 +932,20 @@ button {
   word-spacing: -1px;
 }
 
-button:focus {
+button:focus,
+.button:focus {
   box-shadow: $baseD0 0 0 5px 0;
   z-index: 1;
 }
 
-button:hover {
+button:hover,
+.button:hover {
   background-color: adjust-color($baseD2, $lightness: 5%);
   text-decoration: none;
 }
 
-button:active {
+button:active,
+.button:active {
   box-shadow: inset rgba($baseB3, 0.25) 0 1px 2px 0;
   border-color: adjust-color($baseB3,$lightness:-5%) adjust-color($baseD0,$lightness:-10%) adjust-color($baseD0,$lightness:-15%);
 }
@@ -995,7 +1001,8 @@ button::-moz-focus-inner, input::-moz-focus-inner, button::-webkit-focus-inner, 
     font-size: 1.25em;
   }
 
-  button {
+  button,
+  .button {
     font-size: 1.25rem;
   }
 
