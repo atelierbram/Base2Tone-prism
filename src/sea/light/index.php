@@ -2,7 +2,7 @@
 $title = 'Sea Light';
 $type = 'page';
 $theme = 'sea';
-$id = 'sea-evening-light';
+$id = 'sea-light';
 $description = 'Light colorscheme for Prism';
 $bg = 'light';
 include '../../inc/config.inc';
