@@ -2,7 +2,7 @@
 Name:   <%- scheme %> Dark
 Author: <%- author %>
 
-http://atelierbram.github.io/Base2Tone-prism/output/prism/prism-<%- slug %>-dark.css
+http://atelierbram.github.io/Base2Tone-prism/demo/evening/dark/
 Prism template for Base2Tone by Bram de Haan (https://github.com/atelierbram/Base2Tone-prism)
 Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 */
@@ -147,3 +147,23 @@ pre > code.highlight {
   outline: .4em solid #<%- base["B2"]["hex"] %>;
   outline-offset: .4em;
 }
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers .line-numbers-rows {
+  border-right-color: #<%- base["A1"]["hex"] %> !important;
+}
+
+.line-numbers-rows > span:before {
+  color: #<%- base["A2"]["hex"] %> !important;
+}
+
+/* overrides color-values for the Line Highlight plugin
+ * http://prismjs.com/plugins/line-highlight/
+ */
+/* .line-highlight { */
+/*   background: #<%- base["B6"]["hex"] %> !important; */
+/*   background: linear-gradient(to right, #<%- base["B6"]["hex"] %> 70%, #<%- base["B4"]["hex"] %>) !important; */
+/* } */
+

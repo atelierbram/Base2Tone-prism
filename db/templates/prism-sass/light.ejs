@@ -1,0 +1,202 @@
+/*
+Name:   <%- scheme %> Light
+Author: <%- author %>
+
+http://atelierbram.github.io/Base2Tone-prism/demo/evening/light/
+Prism template for Base2Tone by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/prism/)
+Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
+*/
+
+$baseA0: #<%- base["A0"]["hex"] %>;
+$baseA1: #<%- base["A1"]["hex"] %>;
+$baseA2: #<%- base["A2"]["hex"] %>;
+$baseA3: #<%- base["A3"]["hex"] %>;
+$baseA4: #<%- base["A4"]["hex"] %>;
+$baseA5: #<%- base["A5"]["hex"] %>;
+$baseA6: #<%- base["A6"]["hex"] %>;
+$baseA7: #<%- base["A7"]["hex"] %>;
+
+$baseB0: #<%- base["B0"]["hex"] %>;
+$baseB1: #<%- base["B1"]["hex"] %>;
+$baseB2: #<%- base["B2"]["hex"] %>;
+$baseB3: #<%- base["B3"]["hex"] %>;
+$baseB4: #<%- base["B4"]["hex"] %>;
+$baseB5: #<%- base["B5"]["hex"] %>;
+$baseB6: #<%- base["B6"]["hex"] %>;
+$baseB7: #<%- base["B7"]["hex"] %>;
+
+$baseC0: #<%- base["C0"]["hex"] %>;
+$baseC1: #<%- base["C1"]["hex"] %>;
+$baseC2: #<%- base["C2"]["hex"] %>;
+$baseC3: #<%- base["C3"]["hex"] %>;
+$baseC4: #<%- base["C4"]["hex"] %>;
+$baseC5: #<%- base["C5"]["hex"] %>;
+$baseC6: #<%- base["C6"]["hex"] %>;
+$baseC7: #<%- base["C7"]["hex"] %>;
+
+$baseD0: #<%- base["D0"]["hex"] %>;
+$baseD1: #<%- base["D1"]["hex"] %>;
+$baseD2: #<%- base["D2"]["hex"] %>;
+$baseD3: #<%- base["D3"]["hex"] %>;
+$baseD4: #<%- base["D4"]["hex"] %>;
+$baseD5: #<%- base["D5"]["hex"] %>;
+$baseD6: #<%- base["D6"]["hex"] %>;
+$baseD7: #<%- base["D7"]["hex"] %>;
+
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  background: $baseC7;
+  color: $baseB4;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: $baseC7;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: $baseC7;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: $baseC4;
+}
+
+.token.punctuation {
+  color: $baseC4;
+}
+
+.token.namespace {
+  opacity: .7;
+}
+
+.token.tag,
+.token.operator,
+.token.number {
+  color: $baseB0;
+}
+
+.token.property,
+.token.function {
+  color: $baseD4;
+}
+
+.token.tag-id,
+.token.selector,
+.token.atrule-id {
+  color: $baseD0;
+}
+
+code.language-javascript,
+.token.attr-name {
+  color: $baseD2;
+}
+
+code.language-css,
+code.language-scss,
+.token.boolean,
+.token.string,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.language-scss .token.string,
+.style .token.string,
+.token.attr-value,
+.token.keyword,
+.token.control,
+.token.directive,
+.token.unit,
+.token.statement,
+.token.regex,
+.token.atrule {
+  color: $baseB4;
+}
+
+.token.placeholder,
+.token.variable {
+  color: $baseB5;
+}
+
+.token.deleted {
+  text-decoration: line-through;
+}
+
+.token.inserted {
+  border-bottom: 1px dotted $baseD0;
+  text-decoration: none;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.important {
+  color: $baseD2;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre > code.highlight {
+  outline: .4em solid $baseD2;
+  outline-offset: .4em;
+}
+
+// overrides color-values for the Line Numbers plugin
+// http://prismjs.com/plugins/line-numbers/
+.line-numbers .line-numbers-rows {
+  border-right-color: adjust-color($baseC6, $lightness: 5%) !important;
+}
+
+.line-numbers-rows > span:before {
+  color: $baseC5 !important;
+}
+
+// overrides color-values for the Line Highlight plugin
+// http://prismjs.com/plugins/line-highlight/
+.line-highlight {
+  background: transparentize($baseD0,0.8) !important;
+  background: linear-gradient(to right, transparentize($baseD0,0.8) 70%, transparentize($baseD0,1)) !important;
+}

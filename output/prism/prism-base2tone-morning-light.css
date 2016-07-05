@@ -2,7 +2,7 @@
 Name:   Base2Tone-Morning Light
 Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
 
-http://atelierbram.github.io/Base2Tone-prism/output/prism/prism-base2tone-morning-light.css
+http://atelierbram.github.io/Base2Tone-prism/demo/evening/light/
 Prism template for Base2Tone by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/prism/)
 Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 */
@@ -147,4 +147,23 @@ pre > code.highlight {
   outline: .4em solid #896724;
   outline-offset: .4em;
 }
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers .line-numbers-rows {
+  border-right-color: #e3dcce !important;
+}
+
+.line-numbers-rows > span:before {
+  color: #9c927c !important;
+}
+
+/* overrides color-values for the Line Highlight plugin
+ * http://prismjs.com/plugins/line-highlight/
+ */
+/* .line-highlight { */
+/*   background: #93abdc !important; */
+/*   background: linear-gradient(to right, #93abdc 70%, #93abdc) !important; */
+/* } */
 

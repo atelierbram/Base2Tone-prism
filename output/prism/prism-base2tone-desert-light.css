@@ -2,7 +2,7 @@
 Name:   Base2Tone-Desert Light
 Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
 
-http://atelierbram.github.io/Base2Tone-prism/output/prism/prism-base2tone-desert-light.css
+http://atelierbram.github.io/Base2Tone-prism/demo/evening/light/
 Prism template for Base2Tone by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/prism/)
 Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 */
@@ -147,4 +147,23 @@ pre > code.highlight {
   outline: .4em solid #dd7c3c;
   outline-offset: .4em;
 }
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers .line-numbers-rows {
+  border-right-color: #ede7e3 !important;
+}
+
+.line-numbers-rows > span:before {
+  color: #b9b1ac !important;
+}
+
+/* overrides color-values for the Line Highlight plugin
+ * http://prismjs.com/plugins/line-highlight/
+ */
+/* .line-highlight { */
+/*   background: #c6b57b !important; */
+/*   background: linear-gradient(to right, #c6b57b 70%, #c6b57b) !important; */
+/* } */
 

@@ -1,0 +1,203 @@
+/*
+Name:   Base2Tone-Evening Light
+Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
+
+http://atelierbram.github.io/Base2Tone-prism/demo/evening/light/
+Prism template for Base2Tone by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/prism/)
+Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
+*/
+
+$baseA0: #2a2734;
+$baseA1: #363342;
+$baseA2: #545167;
+$baseA3: #6c6783;
+$baseA4: #787391;
+$baseA5: #8e8aa3;
+$baseA6: #a4a1b5;
+$baseA7: #bab8c7;
+
+$baseB0: #6a51e6;
+$baseB1: #7a63ee;
+$baseB2: #8a75f5;
+$baseB3: #9a86fd;
+$baseB4: #afa0fe;
+$baseB5: #c4b9fe;
+$baseB6: #d9d2fe;
+$baseB7: #eeebff;
+
+$baseC0: #7c756e;
+$baseC1: #90877f;
+$baseC2: #a19991;
+$baseC3: #b2aba4;
+$baseC4: #c3bdb6;
+$baseC5: #d8d1ca;
+$baseC6: #ebe6e0;
+$baseC7: #fbfaf9;
+
+$baseD0: #b37537;
+$baseD1: #cb823a;
+$baseD2: #e09142;
+$baseD3: #ffa142;
+$baseD4: #ffad5c;
+$baseD5: #ffb870;
+$baseD6: #ffc285;
+$baseD7: #ffcc99;
+
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  background: $baseC7;
+  color: $baseB4;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: $baseC7;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: $baseC7;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: $baseC4;
+}
+
+.token.punctuation {
+  color: $baseC4;
+}
+
+.token.namespace {
+  opacity: .7;
+}
+
+.token.tag,
+.token.operator,
+.token.number {
+  color: $baseB0;
+}
+
+.token.property,
+.token.function {
+  color: $baseD4;
+}
+
+.token.tag-id,
+.token.selector,
+.token.atrule-id {
+  color: $baseD0;
+}
+
+code.language-javascript,
+.token.attr-name {
+  color: $baseD2;
+}
+
+code.language-css,
+code.language-scss,
+.token.boolean,
+.token.string,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.language-scss .token.string,
+.style .token.string,
+.token.attr-value,
+.token.keyword,
+.token.control,
+.token.directive,
+.token.unit,
+.token.statement,
+.token.regex,
+.token.atrule {
+  color: $baseB4;
+}
+
+.token.placeholder,
+.token.variable {
+  color: $baseB5;
+}
+
+.token.deleted {
+  text-decoration: line-through;
+}
+
+.token.inserted {
+  border-bottom: 1px dotted $baseD0;
+  text-decoration: none;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.important {
+  color: $baseD2;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre > code.highlight {
+  outline: .4em solid $baseD2;
+  outline-offset: .4em;
+}
+
+// overrides color-values for the Line Numbers plugin
+// http://prismjs.com/plugins/line-numbers/
+.line-numbers .line-numbers-rows {
+  border-right-color: adjust-color($baseC6, $lightness: 5%) !important;
+}
+
+.line-numbers-rows > span:before {
+  color: $baseC5 !important;
+}
+
+// overrides color-values for the Line Highlight plugin
+// http://prismjs.com/plugins/line-highlight/
+.line-highlight {
+  background: transparentize($baseD0,0.8) !important;
+  background: linear-gradient(to right, transparentize($baseD0,0.8) 70%, transparentize($baseD0,1)) !important;
+}
+

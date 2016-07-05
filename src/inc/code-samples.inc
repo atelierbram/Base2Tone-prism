@@ -2,7 +2,7 @@
 <section class="code-samples">
         <div class="col">
           <h3>HTML</h3>
-          <pre class="language-markup"><code>&lt;!doctype html&gt;
+          <pre class="language-markup line-numbers" data-line="1"><code>&lt;!doctype html&gt;
 &lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;
     &lt;head&gt;
         &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -19,7 +19,7 @@
         </div>
         <div class="col">
           <h3>CSS</h3>
-          <pre class="language-css"><code>/* comment */
+          <pre class="language-css line-numbers" data-line="6"><code>/* comment */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -35,7 +35,7 @@ small {
 
         <div class="col">
           <h3>Sass <small>scss</small></h3>
-          <pre class="language-scss"><code>.visuallyhidden {
+          <pre class="language-scss line-numbers" data-line="10"><code>.visuallyhidden {
 // Hide only visually, but have it available for screen readers:
 // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
   border: 0;
@@ -73,7 +73,7 @@ small {
 
         <div class="col">
           <h3>Javascript</h3>
-          <pre class="language-javascript"><code>/*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+          <pre class="language-javascript line-numbers" data-line="9"><code>/*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
 (function( w ){
   var loadJS = function( src, cb ){
     "use strict";
@@ -108,7 +108,7 @@ function foo(bar) {
 
             <div class="col">
               <h3>PHP</h3>
-              <pre class="language-php">
+              <pre class="language-php line-numbers" data-line="15">
 <code>&lt;?php namespace App\Services;
 
 use App\User;
@@ -127,7 +127,7 @@ public function validator(array $data)</code></pre></div>
 
               <div class="col">
                 <h3>Ruby</h3>
-                <pre class="language-ruby">
+                <pre class="language-ruby line-numbers" data-line="8">
 <code>##
 # Array ISO Test
 
@@ -145,7 +145,7 @@ end</code></pre></div>
 
                 <div class="col">
                   <h3>Python</h3>
-                  <pre class="language-python">
+                  <pre class="language-python line-numbers" data-line="5">
 <code>class _BaseHTMLProcessor(sgmllib.SGMLParser):
     elements_no_end_tag = [&#39;area&#39;, &#39;base&#39;, &#39;basefont&#39;, &#39;br&#39;, &#39;col&#39;, &#39;frame&#39;, &#39;hr&#39;,
       &#39;img&#39;, &#39;input&#39;, &#39;isindex&#39;, &#39;link&#39;, &#39;meta&#39;, &#39;param&#39;]

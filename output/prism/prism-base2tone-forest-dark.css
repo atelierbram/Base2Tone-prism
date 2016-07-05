@@ -2,7 +2,7 @@
 Name:   Base2Tone-Forest Dark
 Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
 
-http://atelierbram.github.io/Base2Tone-prism/output/prism/prism-base2tone-forest-dark.css
+http://atelierbram.github.io/Base2Tone-prism/demo/evening/dark/
 Prism template for Base2Tone by Bram de Haan (https://github.com/atelierbram/Base2Tone-prism)
 Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 */
@@ -147,4 +147,24 @@ pre > code.highlight {
   outline: .4em solid #5c705c;
   outline-offset: .4em;
 }
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers .line-numbers-rows {
+  border-right-color: #353b35 !important;
+}
+
+.line-numbers-rows > span:before {
+  color: #485148 !important;
+}
+
+/* overrides color-values for the Line Highlight plugin
+ * http://prismjs.com/plugins/line-highlight/
+ */
+/* .line-highlight { */
+/*   background: #c8e4c8 !important; */
+/*   background: linear-gradient(to right, #c8e4c8 70%, #8fae8f) !important; */
+/* } */
+
 
