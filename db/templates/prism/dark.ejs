@@ -152,18 +152,18 @@ pre > code.highlight {
  * http://prismjs.com/plugins/line-numbers/
  */
 .line-numbers .line-numbers-rows {
-  border-right-color: #<%- base["A1"]["hex"] %> !important;
+  border-right-color: #<%- base["A1"]["hex"] %>;
 }
 
 .line-numbers-rows > span:before {
-  color: #<%- base["A2"]["hex"] %> !important;
+  color: #<%- base["A1"]["hex"] %>;
 }
 
 /* overrides color-values for the Line Highlight plugin
  * http://prismjs.com/plugins/line-highlight/
  */
-/* .line-highlight { */
-/*   background: #<%- base["B6"]["hex"] %> !important; */
-/*   background: linear-gradient(to right, #<%- base["B6"]["hex"] %> 70%, #<%- base["B4"]["hex"] %>) !important; */
-/* } */
+.line-highlight {
+  background: #<%- base["D0"]["hex"] %>33;
+  background: linear-gradient(to right, #<%- base["D0"]["hex"] %>33 70%, #<%- base["D0"]["hex"] %>00);
+}
 

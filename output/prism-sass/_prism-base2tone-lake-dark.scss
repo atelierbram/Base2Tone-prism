@@ -187,17 +187,17 @@ pre > code.highlight {
 // overrides color-values for the Line Numbers plugin
 // http://prismjs.com/plugins/line-numbers/
 .line-numbers .line-numbers-rows {
-  border-right-color: adjust-color($baseA0, $lightness: 1%) !important;
+  border-right-color: adjust-color($baseA0, $lightness: 1%);
 }
 
 .line-numbers-rows > span:before {
-  color: adjust-color($baseA1, $lightness: 2.5%) !important;
+  color: adjust-color($baseA1, $lightness: 2.5%);
 }
 
 // overrides color-values for the Line Highlight plugin
 // http://prismjs.com/plugins/line-highlight/
 .line-highlight {
-  background: transparentize($baseD0,0.8) !important;
-  background: linear-gradient(to right, transparentize($baseD0,0.8) 70%, transparentize($baseD0,1)) !important;
+  background: transparentize($baseD0,0.8);
+  background: linear-gradient(to right, transparentize($baseD0,0.8) 70%, transparentize($baseD0,1));
 }
 

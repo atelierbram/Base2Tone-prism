@@ -152,17 +152,17 @@ pre > code.highlight {
  * http://prismjs.com/plugins/line-numbers/
  */
 .line-numbers .line-numbers-rows {
-  border-right-color: #<%- base["C6"]["hex"] %> !important;
+  border-right-color: #<%- base["C6"]["hex"] %>;
 }
 
 .line-numbers-rows > span:before {
-  color: #<%- base["C3"]["hex"] %> !important;
+  color: #<%- base["C5"]["hex"] %>;
 }
 
 /* overrides color-values for the Line Highlight plugin
  * http://prismjs.com/plugins/line-highlight/
  */
-/* .line-highlight { */
-/*   background: #<%- base["B5"]["hex"] %> !important; */
-/*   background: linear-gradient(to right, #<%- base["B5"]["hex"] %> 70%, #<%- base["B5"]["hex"] %>) !important; */
-/* } */
+.line-highlight {
+  background: #<%- base["D0"]["hex"] %>33;
+  background: linear-gradient(to right, #<%- base["D0"]["hex"] %>33 70%, #<%- base["D0"]["hex"] %>00);
+}

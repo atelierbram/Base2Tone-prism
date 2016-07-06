@@ -152,19 +152,19 @@ pre > code.highlight {
  * http://prismjs.com/plugins/line-numbers/
  */
 .line-numbers .line-numbers-rows {
-  border-right-color: #2f2d2f !important;
+  border-right-color: #2f2d2f;
 }
 
 .line-numbers-rows > span:before {
-  color: #575158 !important;
+  color: #2f2d2f;
 }
 
 /* overrides color-values for the Line Highlight plugin
  * http://prismjs.com/plugins/line-highlight/
  */
-/* .line-highlight { */
-/*   background: #eaa8f0 !important; */
-/*   background: linear-gradient(to right, #eaa8f0 70%, #cb79d2) !important; */
-/* } */
+.line-highlight {
+  background: #99590033;
+  background: linear-gradient(to right, #99590033 70%, #99590000);
+}
 
 
