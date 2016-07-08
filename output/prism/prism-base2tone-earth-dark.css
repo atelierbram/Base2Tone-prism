@@ -161,10 +161,12 @@ pre > code.highlight {
 
 /* overrides color-values for the Line Highlight plugin
  * http://prismjs.com/plugins/line-highlight/
+ * alpha transparency in 8 digits hex notation coming to a browser near you soon:
+ * https://drafts.csswg.org/css-color/#hex-notation
  */
 .line-highlight {
-  background: #9c834933;
-  background: linear-gradient(to right, #9c834933 70%, #9c834900);
+  background: #bfa05a33;
+  background: linear-gradient(to right, #bfa05a33 70%, #bfa05a00);
 }
 
 

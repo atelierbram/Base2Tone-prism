@@ -27,6 +27,7 @@ add_import_path "output/prism-sass"
 images_dir = 'assets/img'
 javascripts_dir = 'assets/js'
 relative_assets = true
-line_comments = true
-output_style = :compressed
-
+# line_comments = true
+line_comments = false
+# output_style = :compressed
+output_style = :expanded

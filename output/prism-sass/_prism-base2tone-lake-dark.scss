@@ -184,8 +184,9 @@ pre > code.highlight {
   outline-offset: .4em;
 }
 
-// overrides color-values for the Line Numbers plugin
-// http://prismjs.com/plugins/line-numbers/
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
 .line-numbers .line-numbers-rows {
   border-right-color: adjust-color($baseA0, $lightness: 1%);
 }
@@ -194,10 +195,11 @@ pre > code.highlight {
   color: adjust-color($baseA1, $lightness: 2.5%);
 }
 
-// overrides color-values for the Line Highlight plugin
-// http://prismjs.com/plugins/line-highlight/
+/* overrides color-values for the Line Highlight plugin
+* http://prismjs.com/plugins/line-highlight/
+*/
 .line-highlight {
-  background: transparentize($baseD0,0.8);
-  background: linear-gradient(to right, transparentize($baseD0,0.8) 70%, transparentize($baseD0,1));
+  background: transparentize($baseD2,0.8);
+  background: linear-gradient(to right, transparentize($baseD2,0.8) 70%, transparentize($baseD2,1));
 }
 
