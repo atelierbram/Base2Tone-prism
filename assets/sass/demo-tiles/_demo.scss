@@ -35,18 +35,22 @@
 .bg-baseD6 { background-color: $baseD6; color: adjust-color($baseD0, $lightness: -2.5%); }
 .bg-baseD7 { background-color: $baseD7; color: $baseD0; }
 
-
-// Webfont: Overpass-Light
-// https://github.com/RedHatBrand/overpass
 @font-face {
-  font-family: 'Overpass';
-  src: url('../../fonts/overpass/Overpass-Light.woff2') format('woff2'),
-  url('../../fonts/overpass/Overpass-Light.woff') format('woff'),
-  url('../../fonts/overpass/Overpass-Light.ttf') format('truetype');
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+    font-family: 'infiniregular';
+    src: url('//base2t.one/assets/fonts/infini/infini-romain.woff2') format('woff2'),
+         url('//base2t.one/assets/fonts/infini/infini-romain.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+// @font-face {
+//     font-family: 'infiniitalic';
+//     src: url('//base2t.one/assets/fonts/infini/infini-italique.woff2') format('woff2'),
+//          url('//base2t.one/assets/fonts/infini/infini-italique.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
 // generic demo styles
 *, *::before, *::after {
   margin: 0;
@@ -82,6 +86,8 @@ body {
   color: #111;
   min-height: 100%;
   box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased !important;
 }
 
 section {
@@ -99,7 +105,7 @@ section {
 .wf-active body,
 .wf-active button,
 .wf-active .button {
-  font-family: Overpass, AvenirNext-Regular, "Lucida Grande", "Segoe Ui", "Trebuchet Ms", sans-serif;
+  font-family: infiniregular, AvenirNext-Regular, "Lucida Grande", "Segoe Ui", "Trebuchet Ms", sans-serif;
 }
 
 h1, h2, h3 {
@@ -116,7 +122,7 @@ h2, h3 {
 .wf-active h1,
 .wf-active h2,
 .wf-active h3 {
-  font-family: Overpass, AvenirNextCondensed-DemiBold, "Lucida Grande", "Segoe Ui", "Trebuchet Ms", sans-serif;
+  font-family: infiniregular, AvenirNextCondensed-DemiBold, "Lucida Grande", "Segoe Ui", "Trebuchet Ms", sans-serif;
 }
 
 .bg-dark .col h3 {
@@ -140,54 +146,44 @@ a {
 .footer {
   width: 100%;
   text-align: center;
-  color: $baseB7;
+  color: $baseA0;
+  // background-color: adjust-color($baseB7, $saturation: -50%);
+  background-color: $baseB7;
 }
 
 .github-corner svg[style] {
-  fill: $baseA0 !important;
+  transition: .3s all;
+  fill: $baseA7 !important;
+  color: $baseA5 !important;
 }
 
-.bg-dark .github-corner svg[style] {
-  color: $baseA2 !important;
-}
-
-.bg-dark .github-corner:hover svg[style] {
-  color: $baseD3 !important;
-}
-
-.bg-light .github-corner svg[style] {
-  color: $baseC0 !important;
-}
-
-.bg-light .github-corner:hover svg[style] {
+.github-corner:hover svg[style] {
+  fill: $baseA6 !important;
   color: $baseD7 !important;
 }
 
-.bg-dark .header {
-  background: $baseA2;
-}
-
-.footer {
-  background: $baseA1;
-}
-
-.bg-light .header {
-  background: $baseC0;
-}
-
 .header {
-  padding: 3em 0 1em;
-  @media(min-width: 320px) {
-    padding-bottom: 0;
+  @media(max-width: 639px) {
+    padding-top: 3em;
   }
-  @media(min-width: 640px) {
-    padding: 0;
+}
+
+@media(min-width: 640px) {
+
+  .header,
+  .bg-dark .header {
+    background-image: linear-gradient($baseB7, $baseB7 55%, $baseA1 0, $baseA1);
   }
+
+  .bg-light .header {
+    background-image: linear-gradient($baseB7, $baseB7 55%, $baseC7 0, $baseC7);
+  }
+
 }
 
 .header p {
   font-size: 1em;
-  @media(max-width: 640px) {
+  @media(max-width: 639px) {
     font-size: .875em;
   }
 }
@@ -207,52 +203,12 @@ a {
 
 .header a,
 .footer a {
-  color: $baseD3;
+  color: $baseA4;
   transition: all .3s;
   &:hover {
-    color: $baseD4;
+    color: $baseA6;
   }
 }
-// .theme-morning-dark .header a,
-// .theme-earth-dark .header a {
-//    color: $baseD7;
-//   &:hover {
-//     color: adjust-color($baseD7, $lightness: 5%);
-//   }
-// }
-//
-// .bg-light .header a {
-//   // color: $baseD7;
-//     // color: adjust-color($baseD7, $lightness: 5%);
-//     color: $baseD7;
-//   &:hover {
-//     color: adjust-color($baseD7, $lightness: 5%);
-//   }
-// }
-//
-// .theme-morning-light .header a,
-// .theme-earth-light .header a,
-// .theme-forest-light .header a {
-//    color: $baseD4;
-//   &:hover {
-//     color: adjust-color($baseD4, $lightness: 5%);
-//   }
-// }
-//
-// .theme-cave-light .header a,
-// .theme-heath-light .header a {
-//   color: $baseD5;
-//   &:hover {
-//     color: adjust-color($baseD5, $lightness: 5%);
-//   }
-// }
-//
-// .bg-light .footer a {
-//   color: adjust-color($baseD7, $lightness: 0%);
-//   &:hover {
-//     color: adjust-color($baseD7, $lightness: 10%);
-//   }
-// }
 
 // logo
 .logo {
@@ -261,16 +217,17 @@ a {
   vertical-align: middle;
 
   @media(min-width: 320px) {
-    // width: calc(100vw - 2em);
-    width: 100vw;
+    width: 288px;
     height: 0;
     padding-bottom: 39.28571428571429%;
   }
-  // @media(min-width: 640px) {
-  //   width: 100vw;
-  // }
+  @media(min-width: 690px) {
+    min-width: 555px;
+    width: 90vw;
+  }
 }
 
+img,
 svg {
   max-width: 100%;
 }
@@ -285,14 +242,6 @@ svg {
   }
 }
 
-.bg-light [id="bg-bottom"] rect {
-  fill: $baseC7;
-}
-
-.bg-dark [id="bg-bottom"] rect {
-  fill: $baseA1;
-}
-
 .bg-light [id="app-name"] text {
   fill: $baseA1;
 }
@@ -301,43 +250,63 @@ svg {
   fill: $baseC7;
 }
 
-[id="bg"] rect {
-  fill: $baseB7;
+
+[id="logo-glyphs-base"] {
+  color: $baseD3 ;
 }
 
-
-[id="bg-inner-bottom"] polygon {
-  fill: $baseB5;
-}
-
-[id="bg-inner-sides"] polygon {
-  fill: $baseB6;
-}
-
-[id*="logo-glyphs"] path {
+[class*="bg-"] [id*="-shadow"] path {
   fill: currentColor;
 }
 
-
-[class*="bg-"] [id*="-shadow"] path,
-[class*="bg-"] [id*="-inner"] path {
-  fill: $baseA2;
-}
-
-[class*="bg-"] [id*="-shadow"] path,
-[class*="bg-"] [id*="-inner"] path {
+[class*="bg-"] [id*="-shadow"] path {
   opacity: 0;
 }
 
-.domready [id*="-shadow"] path,
-.domready [id*="-inner"] path {
+.domready [id*="-shadow"] path {
   animation: glyph-opacity 3s infinite linear;
 }
 
-.domready [id="tone-inner"] path,
-.domready [id="tone-shadow"] path {
+.domready [id*="-inner"] path {
+  animation: glyph-fill 3s infinite linear;
+}
+
+.domready [id="glyphs-base-shadow"] path,
+.domready [id="logo-glyphs-tone-inner"] path {
   animation-delay: 1.5s;
 }
+
+// css-animations
+@keyframes glyph-opacity {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+}
+
+@keyframes glyph-fill {
+  0% {
+    fill: $baseB7;
+  }
+  49% {
+    fill: $baseB7;
+  }
+  50% {
+    fill: currentColor;
+  }
+  99% {
+    fill: currentColor;
+  }
+}
+
 
 // css-animations
 @keyframes glyph-opacity {

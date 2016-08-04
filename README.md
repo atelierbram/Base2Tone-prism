@@ -37,16 +37,8 @@ Released under [MIT Licence](http://atelierbram.mit-license.org)
 
 ---
 
-#### Overpass Font
-Copyright 2015 Red Hat, Inc.,
-This Font Software is dual licensed and available under the SIL Open Font License, Version 1.1. and also the LGPL 2.1
-
-The Open Font license [can be found here](https://github.com/RedHatBrand/overpass/blob/master/LICENSE.md), and is also available with a [FAQ](http://scripts.sil.org/OFL)
-
-The GNU LGPL can be found at [http://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html]
-
-#### SIL OPEN FONT LICENSE
-Version 1.1 - 26 February 2007
+#### Infini Font
+[Infini](http://www.cnap.graphismeenfrance.fr/infini/en/), by [Sandrine Nugue](//www.sandrinenugue.com/), is the font being used [in the demo site](http://base2t.one). Infini is a public commission of the National Centre for Visual Arts on the occasion of “Graphisme en France 2014”. The type family is available for free under a [Creative Creative Commons Attribution-No Derivative Works 3.0 Unported](http://creativecommons.org/licenses/by-nd/3.0/)
 
 ---
 

@@ -29,5 +29,5 @@ javascripts_dir = 'assets/js'
 relative_assets = true
 # line_comments = true
 line_comments = false
-# output_style = :compressed
-output_style = :expanded
+output_style = :compressed
+# output_style = :expanded
