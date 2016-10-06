@@ -26,20 +26,20 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  background: #1e2138;
-  color: #7178bc;
+  background: #2a2433;
+  color: #b886fd;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: #4e58b1;
+  background: #8f51e6;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
-  background: #4e58b1;
+  background: #8f51e6;
 }
 
 /* Code blocks */
@@ -59,11 +59,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #51557b;
+  color: #635775;
 }
 
 .token.punctuation {
-  color: #51557b;
+  color: #635775;
 }
 
 .token.namespace {
@@ -78,18 +78,18 @@ pre[class*="language-"] {
 
 .token.property,
 .token.function {
-  color: #7178bc;
+  color: #b886fd;
 }
 
 .token.tag-id,
 .token.selector,
 .token.atrule-id {
-  color: #e1e4ff;
+  color: #f3ebff;
 }
 
 code.language-javascript,
 .token.attr-name {
-  color: #bcc1e6;
+  color: #d6b9fe;
 }
 
 code.language-css,
@@ -109,12 +109,12 @@ code.language-scss,
 .token.statement,
 .token.regex,
 .token.atrule {
-  color: #ff9e99;
+  color: #ffb6b3;
 }
 
 .token.placeholder,
 .token.variable {
-  color: #ff9e99;
+  color: #ffb6b3;
 }
 
 .token.deleted {
@@ -122,7 +122,7 @@ code.language-scss,
 }
 
 .token.inserted {
-  border-bottom: 1px dotted #e1e4ff;
+  border-bottom: 1px dotted #f3ebff;
   text-decoration: none;
 }
 
@@ -136,7 +136,7 @@ code.language-scss,
 }
 
 .token.important {
-  color: #bcc1e6;
+  color: #d6b9fe;
 }
 
 .token.entity {
@@ -144,7 +144,7 @@ code.language-scss,
 }
 
 pre > code.highlight {
-  outline: .4em solid #656eb8;
+  outline: .4em solid #aa75f5;
   outline-offset: .4em;
 }
 
@@ -152,11 +152,11 @@ pre > code.highlight {
  * http://prismjs.com/plugins/line-numbers/
  */
 .line-numbers .line-numbers-rows {
-  border-right-color: #292c47;
+  border-right-color: #372f42;
 }
 
 .line-numbers-rows > span:before {
-  color: #292c47;
+  color: #372f42;
 }
 
 /* overrides color-values for the Line Highlight plugin

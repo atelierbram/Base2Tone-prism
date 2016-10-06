@@ -25,6 +25,10 @@ overwrite_to_file()
   base16-builder --scheme "db/schemes/base2tone-cave.yml" --template "db/templates/prism/light.ejs" > "output/prism/prism-base2tone-cave-light.css"
   base16-builder --scheme "db/schemes/base2tone-heath.yml" --template "db/templates/prism/dark.ejs" > "output/prism/prism-base2tone-heath-dark.css"
   base16-builder --scheme "db/schemes/base2tone-heath.yml" --template "db/templates/prism/light.ejs" > "output/prism/prism-base2tone-heath-light.css"
+  base16-builder --scheme "db/schemes/base2tone-drawbridge.yml" --template "db/templates/prism/dark.ejs" > "output/prism/prism-base2tone-drawbridge-dark.css"
+  base16-builder --scheme "db/schemes/base2tone-drawbridge.yml" --template "db/templates/prism/light.ejs" > "output/prism/prism-base2tone-drawbridge-light.css"
+  base16-builder --scheme "db/schemes/base2tone-meadow.yml" --template "db/templates/prism/dark.ejs" > "output/prism/prism-base2tone-meadow-dark.css"
+  base16-builder --scheme "db/schemes/base2tone-meadow.yml" --template "db/templates/prism/light.ejs" > "output/prism/prism-base2tone-meadow-light.css"
  }
 
 # execute it

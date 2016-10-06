@@ -30,4 +30,5 @@ relative_assets = true
 # line_comments = true
 line_comments = false
 output_style = :compressed
+sourcemap = true
 # output_style = :expanded

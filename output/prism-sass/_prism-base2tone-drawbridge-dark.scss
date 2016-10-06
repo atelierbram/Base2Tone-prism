@@ -1,0 +1,205 @@
+/*
+Name:   Base2Tone-Drawbridge Dark
+Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
+
+http://atelierbram.github.io/Base2Tone-prism/demo/evening/dark/
+Prism template for Base2Tone by Bram de Haan (https://github.com/atelierbram/Base2Tone-prism)
+Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
+*/
+
+$baseA0: #1b1f32;
+$baseA1: #252a41;
+$baseA2: #444b6f;
+$baseA3: #51587b;
+$baseA4: #5e6587;
+$baseA5: #797e96;
+$baseA6: #9094a7;
+$baseA7: #a6aab9;
+
+$baseB0: #4961da;
+$baseB1: #516aec;
+$baseB2: #627af4;
+$baseB3: #7289fd;
+$baseB4: #8b9efd;
+$baseB5: #a5b3fe;
+$baseB6: #c3cdfe;
+$baseB7: #e1e6ff;
+
+$baseC0: #71787a;
+$baseC1: #818b8d;
+$baseC2: #939c9f;
+$baseC3: #a6aeb0;
+$baseC4: #b7c0c2;
+$baseC5: #cbd4d7;
+$baseC6: #e1e8ea;
+$baseC7: #f9fbfb;
+
+$baseD0: #289dbd;
+$baseD1: #33abcc;
+$baseD2: #4db0cb;
+$baseD3: #5cbcd6;
+$baseD4: #67c9e4;
+$baseD5: #75d5f0;
+$baseD6: #86e0f9;
+$baseD7: #99e9ff;
+
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  background: $baseA0;
+  color: $baseB3;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: $baseB0;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: $baseB0;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: $baseA3;
+}
+
+.token.punctuation {
+  color: $baseA3;
+}
+
+.token.namespace {
+  opacity: .7;
+}
+
+.token.tag,
+.token.operator,
+.token.number {
+  color: $baseD2;
+}
+
+.token.property,
+.token.function {
+  color: $baseB3;
+}
+
+.token.tag-id,
+.token.selector,
+.token.atrule-id {
+  color: $baseB7;
+}
+
+code.language-javascript,
+.token.attr-name {
+  color: $baseB5;
+}
+
+code.language-css,
+code.language-scss,
+.token.boolean,
+.token.string,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.language-scss .token.string,
+.style .token.string,
+.token.attr-value,
+.token.keyword,
+.token.control,
+.token.directive,
+.token.unit,
+.token.statement,
+.token.regex,
+.token.atrule {
+  color: $baseD7;
+}
+
+.token.placeholder,
+.token.variable {
+  color: $baseD7;
+}
+
+.token.deleted {
+  text-decoration: line-through;
+}
+
+.token.inserted {
+  border-bottom: 1px dotted $baseB7;
+  text-decoration: none;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.important {
+  color: $baseB5;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre > code.highlight {
+  outline: .4em solid $baseB2;
+  outline-offset: .4em;
+}
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers .line-numbers-rows {
+  border-right-color: adjust-color($baseA0, $lightness: 1%);
+}
+
+.line-numbers-rows > span:before {
+  color: adjust-color($baseA1, $lightness: 2.5%);
+}
+
+/* overrides color-values for the Line Highlight plugin
+* http://prismjs.com/plugins/line-highlight/
+*/
+.line-highlight {
+  background: transparentize($baseD2,0.8);
+  background: linear-gradient(to right, transparentize($baseD2,0.8) 70%, transparentize($baseD2,1));
+}
+

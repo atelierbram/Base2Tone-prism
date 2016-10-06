@@ -109,12 +109,12 @@ code.language-scss,
 .token.statement,
 .token.regex,
 .token.atrule {
-  color: #fce19c;
+  color: #ffcc4d;
 }
 
 .token.placeholder,
 .token.variable {
-  color: #fce19c;
+  color: #ffcc4d;
 }
 
 .token.deleted {

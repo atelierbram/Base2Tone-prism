@@ -1,0 +1,205 @@
+/*
+Name:   Base2Tone-Suburb Light
+Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
+
+http://atelierbram.github.io/Base2Tone-prism/demo/evening/light/
+Prism template for Base2Tone by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/prism/)
+Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
+*/
+
+$baseA0: #1e2338;
+$baseA1: #292e47;
+$baseA2: #444b6f;
+$baseA3: #51587b;
+$baseA4: #5e6587;
+$baseA5: #797e96;
+$baseA6: #9094a7;
+$baseA7: #a6aab9;
+
+$baseB0: #2040df;
+$baseB1: #2c4be8;
+$baseB2: #3b5af1;
+$baseB3: #4a68fc;
+$baseB4: #6d85fd;
+$baseB5: #a5b3fe;
+$baseB6: #c3cdfe;
+$baseB7: #e1e6ff;
+
+$baseC0: #71787a;
+$baseC1: #818b8d;
+$baseC2: #939c9f;
+$baseC3: #a6aeb0;
+$baseC4: #b7c0c2;
+$baseC5: #cbd4d7;
+$baseC6: #e1e8ea;
+$baseC7: #f9fbfb;
+
+$baseD0: #289dbd;
+$baseD1: #36a9c9;
+$baseD2: #42b7d7;
+$baseD3: #49bedf;
+$baseD4: #51c6e6;
+$baseD5: #5acded;
+$baseD6: #63d3f2;
+$baseD7: #71d7f4;
+
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  background: $baseC7;
+  color: $baseB4;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: $baseC7;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: $baseC7;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: $baseC4;
+}
+
+.token.punctuation {
+  color: $baseC4;
+}
+
+.token.namespace {
+  opacity: .7;
+}
+
+.token.tag,
+.token.operator,
+.token.number {
+  color: $baseB0;
+}
+
+.token.property,
+.token.function {
+  color: $baseD4;
+}
+
+.token.tag-id,
+.token.selector,
+.token.atrule-id {
+  color: $baseD0;
+}
+
+code.language-javascript,
+.token.attr-name {
+  color: $baseD2;
+}
+
+code.language-css,
+code.language-scss,
+.token.boolean,
+.token.string,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.language-scss .token.string,
+.style .token.string,
+.token.attr-value,
+.token.keyword,
+.token.control,
+.token.directive,
+.token.unit,
+.token.statement,
+.token.regex,
+.token.atrule {
+  color: $baseB4;
+}
+
+.token.placeholder,
+.token.variable {
+  color: $baseB5;
+}
+
+.token.deleted {
+  text-decoration: line-through;
+}
+
+.token.inserted {
+  border-bottom: 1px dotted $baseD0;
+  text-decoration: none;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.important {
+  color: $baseD2;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre > code.highlight {
+  outline: .4em solid $baseD2;
+  outline-offset: .4em;
+}
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers .line-numbers-rows {
+  border-right-color: adjust-color($baseC6, $lightness: 5%);
+}
+
+.line-numbers-rows > span:before {
+  color: $baseC5;
+}
+
+/* overrides color-values for the Line Highlight plugin
+ * http://prismjs.com/plugins/line-highlight/
+ */
+.line-highlight {
+  background: transparentize($baseD0,0.8);
+  background: linear-gradient(to right, transparentize($baseD0,0.8) 70%, transparentize($baseD0,1));
+}
+
