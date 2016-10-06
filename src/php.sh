@@ -26,6 +26,10 @@ overwrite_to_file()
  curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/cave/light/index.php" > "../demo/cave/light/index.html"
  curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/heath/dark/index.php" > "../demo/heath/dark/index.html"
  curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/heath/light/index.php" > "../demo/heath/light/index.html"
+ curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/drawbridge/dark/index.php" > "../demo/drawbridge/dark/index.html"
+ curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/drawbridge/light/index.php" > "../demo/drawbridge/light/index.html"
+ curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/meadow/dark/index.php" > "../demo/meadow/dark/index.html"
+ curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/meadow/light/index.php" > "../demo/meadow/light/index.html"
  }
 
 # execute it

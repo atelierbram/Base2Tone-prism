@@ -9,6 +9,8 @@
     <li class='<?php if ($theme=="forest") echo "current"; ?> li-forest'><a href="../../forest/dark/">Forest</a></li>
     <li class='<?php if ($theme=="desert") echo "current"; ?> li-desert'><a href="../../desert/dark/">Desert</a></li>
  <li class='<?php if ($theme=="lake") echo "current"; ?> li-lake'><a href="../../lake/dark/">Lake</a></li>
+ <li class='<?php if ($theme=="meadow") echo "current"; ?> li-meadow'><a href="../../meadow/dark/">Meadow</a></li>
+ <li class='<?php if ($theme=="drawbridge") echo "current"; ?> li-drawbridge'><a href="../../drawbridge/dark/">Drawbridge</a></li>
  <li class='<?php if ($theme=="pool") echo "current"; ?> li-pool'><a href="../../pool/dark/">Pool</a></li>
  <li class='<?php if ($theme=="heath") echo "current"; ?> li-heath'><a href="../../heath/dark/">Heath</a></li>
  <li class='<?php if ($theme=="cave") echo "current"; ?> li-cave'><a href="../../cave/dark/">Cave</a></li>
