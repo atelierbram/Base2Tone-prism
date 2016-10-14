@@ -24,6 +24,10 @@ This is the hard part; although the idea is to make color-schemes from just two 
 
 The schemes and templates used can be found in the `db` folder. Copy and edit one of them `schemes/colorschemes.yml` from 32 color-value variables, and build your own DuoTones Prism theme.
 
+Alternatively, to make this process a bit more easy going and straight forward, one can fork [this demo of Base2Tone-Prism on Codepen](http://codepen.io/atelierbram/pen/WrjVyv/).
+
+In essence; one doesn't generate `yml` colorschemes, these are created, color-values manually copied over from a, for example, forked and adapted version of that demo on Codepen. (Tip: use the Developer Tools in your Browser to copy the HEX-color-values output from the rendered `css`). Base16-Builder’s commands are used for generating theme files for ... _anything really_, as long as you can make a template for this application.
+
 ### Conversions
 The light version of the Morning theme, and dark versions of Evening, Sea, Space, Earth and Forest were converted from [DuoTone Themes for Atom](http://simurai.com/projects/2016/01/01/duotone-themes) by [Simurai](http//simurai.com). Morning and Evening are the default Duotone Light and Duotone Dark schemes, but renamed here in order to have a consistent naming convention.
 
