@@ -173,6 +173,8 @@ a {
   .header,
   .bg-dark .header {
     background-image: linear-gradient($baseB7, $baseB7 55%, $baseA1 0, $baseA1);
+    -webkit-clip-path: polygon(100% 0, 100% 75%, 85% 60%, 50% 100%, 15% 60%, 0 75%, 0 0);
+    clip-path: polygon(100% 0, 100% 75%, 85% 60%, 50% 100%, 15% 60%, 0 75%, 0 0);
   }
 
   .bg-light .header {
