@@ -244,12 +244,14 @@ svg {
   }
 }
 
-.bg-light [id="app-name"] text {
+[id="app-name"] text {
   fill: $baseA1;
 }
 
 .bg-dark [id="app-name"] text {
-  fill: $baseC7;
+  @media(min-width: 640px) {
+    fill: $baseC7;
+  }
 }
 
 
@@ -586,6 +588,8 @@ nav ul {
   // background-color: $baseC0;
   background-position: .25em center;
   border-bottom-right-radius: 3px;
+  color: $baseD5;
+
 
   @media(max-width: 640px) {
     position: fixed;
@@ -602,12 +606,21 @@ nav ul {
 .bg-dark .nav_toggle-themes {
   @media(min-width: 640px) {
     background-color: $baseA1;
+
+    &:hover {
+      background-color: $baseA0;
+    }
+
   }
 }
 
 .bg-light .nav_toggle-themes {
   @media(min-width: 640px) {
     background-color: adjust-color($baseC0, $lightness: -5%);
+
+    &:hover {
+      background-color: adjust-color($baseC0, $lightness: -10%);
+    }
   }
 }
 
