@@ -474,8 +474,7 @@ nav ul {
 [class*="bg-"] .nav-variation_list a {
   @media(min-width: 640px) {
     border: none;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-radius: 3px;
   }
 }
 
