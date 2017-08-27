@@ -121,12 +121,14 @@ svg {
   }
 }
 
-.bg-light [id="app-name"] text {
-  fill: #fbfaf9;
+[id="app-name"] text {
+  fill: #363342;
 }
 
-.bg-dark [id="app-name"] text {
-  fill: #363342;
+@media (min-width: 640px) {
+  .bg-dark [id="app-name"] text {
+    fill: #fbfaf9;
+  }
 }
 
 [id="logo-glyphs-base"] {
