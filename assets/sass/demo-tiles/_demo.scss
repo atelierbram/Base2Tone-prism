@@ -164,7 +164,8 @@ a {
 
 .header {
   @media(max-width: 639px) {
-    padding-top: 3em;
+    padding-top: 6em;
+    padding-bottom: 1em;
   }
 }
 
@@ -346,10 +347,10 @@ nav ul {
   clear: both;
   transition: all .3s;
   position: relative;
-  // padding-right: 3em;
 
   @media(min-width: 640px) {
     padding-top: 0;
+    transform: translateY(1.5em);
   }
 }
 
@@ -390,11 +391,32 @@ nav ul {
 }
 
 .nav-variation_list li {
-  margin-left: 2px;
   align-self: stretch;
   flex-basis: 50px;
+
   @media(min-width: 640px) {
+    padding-top: .25em;
+    padding-bottom: .25em;
     flex-basis: initial;
+    background-color: $baseA6;
+  }
+
+}
+
+.nav-variation_list li:first-of-type {
+  @media(min-width: 640px) {
+    padding-left: .25em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+.nav-variation_list li:last-of-type {
+  @media(min-width: 640px) {
+    // margin-left: 0;
+    padding-right: .25em;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 }
 
@@ -476,7 +498,21 @@ nav ul {
 [class*="bg-"] .nav-variation_list a {
   @media(min-width: 640px) {
     border: none;
-    border-radius: 3px;
+    // border-radius: 3px;
+  }
+}
+
+[class*="bg-"] .nav-variation_list li:first-of-type a {
+  @media(min-width: 640px) {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+}
+
+[class*="bg-"] .nav-variation_list li:last-of-type a {
+  @media(min-width: 640px) {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
 }
 
@@ -597,31 +633,31 @@ nav ul {
 
   @media(min-width: 640px) {
     position: absolute;
-    margin-top: -2em;
+    margin-top: -5em;
     margin-left: 3em;
     border-radius: 3px;
   }
 }
 
 .bg-dark .nav_toggle-themes {
-  @media(min-width: 640px) {
+  // @media(min-width: 640px) {
     background-color: $baseA1;
 
     &:hover {
       background-color: $baseA0;
     }
 
-  }
+  // }
 }
 
 .bg-light .nav_toggle-themes {
-  @media(min-width: 640px) {
+  // @media(min-width: 640px) {
     background-color: adjust-color($baseC0, $lightness: -5%);
 
     &:hover {
       background-color: adjust-color($baseC0, $lightness: -10%);
     }
-  }
+  // }
 }
 
 // end menu
@@ -632,16 +668,23 @@ nav ul {
 
   @media(min-width: 640px) {
     display: flex;
+
+    .js & {
+      margin-top: 3em;
+    }
   }
+
 }
 
 .content {
   padding: 2em 3em 5em;
   transition: all .3s;
+  position: relative;
 
   @media(min-width: 640px) {
     width: 80%;
     flex-grow: 4;
+    margin-top: 3em; // keep variation links clickable (avoid overlap)
   }
 }
 
@@ -651,13 +694,37 @@ nav ul {
   }
 }
 
+.bg-dark .content {
+  background: $baseA2;
+}
+
+.bg-light .content {
+  background: $baseC5;
+}
+
 .js .has-themes-hidden {
   width: 100%;
+}
+
+.content:after {
+  content: "";
+  position: absolute;
+  top:0;left:0;right:0;
+  height: 8px;
+  // background-color: tan;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='8' viewBox='0 0 16 8'%3E%3Crect fill='rgba(0,0,0,0.25)' width='8' height='8'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
 }
 
 .nav-themes {
   flex-grow: 1;
   transition: all .3s;
+
+  .js & {
+    @media(min-width:640px) {
+      margin-top: 3em;
+    }
+  }
 }
 
 .bg-light .nav-themes {
@@ -668,11 +735,11 @@ nav ul {
   background-color: $baseA1;
 }
 
-.js .nav-themes {
-  @media(min-width:640px) {
-    margin-top: 3em;
-  }
-}
+// .js .nav-themes {
+//   @media(min-width:640px) {
+//     margin-top: 3em;
+//   }
+// }
 
 .nav-themes-open {
 
