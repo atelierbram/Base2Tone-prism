@@ -63,7 +63,7 @@ pre[class*="language-"] {
   -ms-hyphens: none;
   hyphens: none;
   background: $baseC7;
-  color: $baseB4;
+  color: $baseB3;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
@@ -114,7 +114,7 @@ pre[class*="language-"] {
 
 .token.property,
 .token.function {
-  color: $baseD4;
+  color: $baseD2;
 }
 
 .token.tag-id,
@@ -145,7 +145,7 @@ code.language-scss,
 .token.statement,
 .token.regex,
 .token.atrule {
-  color: $baseB4;
+  color: $baseB2;
 }
 
 .token.placeholder,

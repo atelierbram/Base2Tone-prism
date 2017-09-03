@@ -1,47 +1,47 @@
 /*
-Name:   Base2Tone-Heath Dark
-Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
+Name:   <%- scheme %> Dark
+Author: <%- author %>
 
 http://atelierbram.github.io/Base2Tone-prism/demo/evening/dark/
 Prism template for Base2Tone by Bram de Haan (https://github.com/atelierbram/Base2Tone-prism)
 Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 */
 
-$baseA0: #222022;
-$baseA1: #2f2d2f;
-$baseA2: #575158;
-$baseA3: #635f63;
-$baseA4: #6f6b70;
-$baseA5: #89858a;
-$baseA6: #9e999f;
-$baseA7: #b3adb3;
+$baseA0: #<%- base["A0"]["hex"] %>;
+$baseA1: #<%- base["A1"]["hex"] %>;
+$baseA2: #<%- base["A2"]["hex"] %>;
+$baseA3: #<%- base["A3"]["hex"] %>;
+$baseA4: #<%- base["A4"]["hex"] %>;
+$baseA5: #<%- base["A5"]["hex"] %>;
+$baseA6: #<%- base["A6"]["hex"] %>;
+$baseA7: #<%- base["A7"]["hex"] %>;
 
-$baseB0: #a21fad;
-$baseB1: #845e87;
-$baseB2: #8f6c93;
-$baseB3: #9a819c;
-$baseB4: #cb79d2;
-$baseB5: #db8de2;
-$baseB6: #eaa8f0;
-$baseB7: #fdebff;
+$baseB0: #<%- base["B0"]["hex"] %>;
+$baseB1: #<%- base["B1"]["hex"] %>;
+$baseB2: #<%- base["B2"]["hex"] %>;
+$baseB3: #<%- base["B3"]["hex"] %>;
+$baseB4: #<%- base["B4"]["hex"] %>;
+$baseB5: #<%- base["B5"]["hex"] %>;
+$baseB6: #<%- base["B6"]["hex"] %>;
+$baseB7: #<%- base["B7"]["hex"] %>;
 
-$baseC0: #787673;
-$baseC1: #8b8884;
-$baseC2: #9d9a95;
-$baseC3: #aeaba7;
-$baseC4: #c1bdb9;
-$baseC5: #d6d2cc;
-$baseC6: #eae6e1;
-$baseC7: #fbfaf9;
+$baseC0: #<%- base["C0"]["hex"] %>;
+$baseC1: #<%- base["C1"]["hex"] %>;
+$baseC2: #<%- base["C2"]["hex"] %>;
+$baseC3: #<%- base["C3"]["hex"] %>;
+$baseC4: #<%- base["C4"]["hex"] %>;
+$baseC5: #<%- base["C5"]["hex"] %>;
+$baseC6: #<%- base["C6"]["hex"] %>;
+$baseC7: #<%- base["C7"]["hex"] %>;
 
-$baseD0: #995900;
-$baseD1: #aa6709;
-$baseD2: #b87414;
-$baseD3: #c38022;
-$baseD4: #cc8c33;
-$baseD5: #d9b98c;
-$baseD6: #e6c699;
-$baseD7: #ffd599;
+$baseD0: #<%- base["D0"]["hex"] %>;
+$baseD1: #<%- base["D1"]["hex"] %>;
+$baseD2: #<%- base["D2"]["hex"] %>;
+$baseD3: #<%- base["D3"]["hex"] %>;
+$baseD4: #<%- base["D4"]["hex"] %>;
+$baseD5: #<%- base["D5"]["hex"] %>;
+$baseD6: #<%- base["D6"]["hex"] %>;
+$baseD7: #<%- base["D7"]["hex"] %>;
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -109,7 +109,7 @@ pre[class*="language-"] {
 .token.tag,
 .token.operator,
 .token.number {
-  color: $baseD2;
+  color: $baseD4;
 }
 
 .token.property,
@@ -202,4 +202,3 @@ pre > code.highlight {
   background: transparentize($baseD2,0.8);
   background: linear-gradient(to right, transparentize($baseD2,0.8) 70%, transparentize($baseD2,1));
 }
-

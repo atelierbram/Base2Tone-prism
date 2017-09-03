@@ -1,47 +1,11 @@
 /*
-Name:   Base2Tone-Heath Dark
-Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
+Name:   <%- scheme %> Dark
+Author: <%- author %>
 
 http://atelierbram.github.io/Base2Tone-prism/demo/evening/dark/
 Prism template for Base2Tone by Bram de Haan (https://github.com/atelierbram/Base2Tone-prism)
 Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 */
-
-$baseA0: #222022;
-$baseA1: #2f2d2f;
-$baseA2: #575158;
-$baseA3: #635f63;
-$baseA4: #6f6b70;
-$baseA5: #89858a;
-$baseA6: #9e999f;
-$baseA7: #b3adb3;
-
-$baseB0: #a21fad;
-$baseB1: #845e87;
-$baseB2: #8f6c93;
-$baseB3: #9a819c;
-$baseB4: #cb79d2;
-$baseB5: #db8de2;
-$baseB6: #eaa8f0;
-$baseB7: #fdebff;
-
-$baseC0: #787673;
-$baseC1: #8b8884;
-$baseC2: #9d9a95;
-$baseC3: #aeaba7;
-$baseC4: #c1bdb9;
-$baseC5: #d6d2cc;
-$baseC6: #eae6e1;
-$baseC7: #fbfaf9;
-
-$baseD0: #995900;
-$baseD1: #aa6709;
-$baseD2: #b87414;
-$baseD3: #c38022;
-$baseD4: #cc8c33;
-$baseD5: #d9b98c;
-$baseD6: #e6c699;
-$baseD7: #ffd599;
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -62,20 +26,20 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  background: $baseA0;
-  color: $baseB4;
+  background: #<%- base["A0"]["hex"] %>;
+  color: #<%- base["B3"]["hex"] %>;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: $baseB0;
+  background: #<%- base["B0"]["hex"] %>;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
-  background: $baseB0;
+  background: #<%- base["B0"]["hex"] %>;
 }
 
 /* Code blocks */
@@ -95,11 +59,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: $baseA3;
+  color: #<%- base["A3"]["hex"] %>;
 }
 
 .token.punctuation {
-  color: $baseA3;
+  color: #<%- base["A3"]["hex"] %>;
 }
 
 .token.namespace {
@@ -109,23 +73,23 @@ pre[class*="language-"] {
 .token.tag,
 .token.operator,
 .token.number {
-  color: $baseD2;
+  color: #<%- base["D2"]["hex"] %>;
 }
 
 .token.property,
 .token.function {
-  color: $baseB5;
+  color: #<%- base["B3"]["hex"] %>;
 }
 
 .token.tag-id,
 .token.selector,
 .token.atrule-id {
-  color: $baseB7;
+  color: #<%- base["B7"]["hex"] %>;
 }
 
 code.language-javascript,
 .token.attr-name {
-  color: $baseB5;
+  color: #<%- base["B5"]["hex"] %>;
 }
 
 code.language-css,
@@ -145,12 +109,12 @@ code.language-scss,
 .token.statement,
 .token.regex,
 .token.atrule {
-  color: $baseD7;
+  color: #<%- base["D7"]["hex"] %>;
 }
 
 .token.placeholder,
 .token.variable {
-  color: $baseD7;
+  color: #<%- base["D7"]["hex"] %>;
 }
 
 .token.deleted {
@@ -158,7 +122,7 @@ code.language-scss,
 }
 
 .token.inserted {
-  border-bottom: 1px dotted $baseB7;
+  border-bottom: 1px dotted #<%- base["B7"]["hex"] %>;
   text-decoration: none;
 }
 
@@ -172,7 +136,7 @@ code.language-scss,
 }
 
 .token.important {
-  color: $baseB5;
+  color: #<%- base["B5"]["hex"] %>;
 }
 
 .token.entity {
@@ -180,7 +144,7 @@ code.language-scss,
 }
 
 pre > code.highlight {
-  outline: .4em solid $baseB2;
+  outline: .4em solid #<%- base["B2"]["hex"] %>;
   outline-offset: .4em;
 }
 
@@ -188,18 +152,20 @@ pre > code.highlight {
  * http://prismjs.com/plugins/line-numbers/
  */
 .line-numbers .line-numbers-rows {
-  border-right-color: adjust-color($baseA0, $lightness: 1%);
+  border-right-color: #<%- base["A1"]["hex"] %>;
 }
 
 .line-numbers-rows > span:before {
-  color: adjust-color($baseA1, $lightness: 2.5%);
+  color: #<%- base["A1"]["hex"] %>;
 }
 
 /* overrides color-values for the Line Highlight plugin
-* http://prismjs.com/plugins/line-highlight/
-*/
+ * http://prismjs.com/plugins/line-highlight/
+ * alpha transparency in 8 digits hex notation coming to a browser near you soon:
+ * https://drafts.csswg.org/css-color/#hex-notation
+ */
 .line-highlight {
-  background: transparentize($baseD2,0.8);
-  background: linear-gradient(to right, transparentize($baseD2,0.8) 70%, transparentize($baseD2,1));
+  background: #<%- base["D2"]["hex"] %>33;
+  background: linear-gradient(to right, #<%- base["D2"]["hex"] %>33 70%, #<%- base["D2"]["hex"] %>00);
 }
 

@@ -88,7 +88,20 @@ body {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: subpixel-antialiased !important;
+  // uncomment for production = for visual grid
+  // position: relative;
+  // min-height: 500vh;
 }
+
+// toggle visual grid 20px x 20px
+// uncomment for production = for visual grid
+// body:after {
+//   content: "";
+//   position: absolute;
+//   top:0;right:0;bottom:0;left:0;
+//   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Crect fill='rgba(0,0,0,.05)' width='20' height='20'/%3E%3C/svg%3E");
+//   z-index: -1;
+// }
 
 section {
   padding-bottom: 5em;
@@ -438,7 +451,7 @@ nav ul {
 }
 
 .nav-variation_list a {
-  padding: .75em 1em;
+  padding: .5em 1em;
   display: block;
   display: flex;
   white-space: nowrap;
@@ -571,10 +584,9 @@ nav ul {
 
 .nav_toggle {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40' fill='rgb(255,255,255)'%3E%3Crect x='12' y='14' width='16' height='2'/%3E%3Crect x='12' y='20' width='16' height='2'/%3E%3Crect x='12' y='26' width='16' height='2'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-
+  background-repeat: no-repeat; 
   top:0;left:0;
-  padding: 1em;
+  padding: .75em 1em;
   color: #fff;
 }
 
@@ -631,7 +643,7 @@ nav ul {
 
   @media(min-width: 640px) {
     position: absolute;
-    margin-top: -5em;
+    margin-top: -4.5em;
     margin-left: 3em;
     border-radius: 3px;
   }
@@ -675,7 +687,7 @@ nav ul {
 }
 
 .content {
-  padding: 2em 3em 5em;
+  padding: 4em 3em 5em;
   transition: all .3s;
   position: relative;
 
@@ -864,16 +876,16 @@ nav ul {
   float: right;
 }
 
-h1 {
-  font-size: 2.5rem;
-}
+// h1 {
+//   font-size: 2.5rem;
+// }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 1em 0 0 .35em;
   letter-spacing: -1px;
   word-spacing: 1px;
@@ -973,7 +985,7 @@ button,
   display: inline-block;
   outline: 0;
   margin: 0 0 .5em .75em;
-  padding: 1em 2em;
+  padding: .5em .75em;
   // text-shadow: $baseA0 0 1px 1px;
   text-decoration: none;
   vertical-align: top;
@@ -1130,7 +1142,7 @@ pre.line-numbers > code {
   }
 
   h3 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   p {
