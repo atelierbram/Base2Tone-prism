@@ -369,7 +369,7 @@ nav ul {
 
 .js .nav-variation {
   @media(max-width: 639px) {
-    padding-top: 3.5em;
+    padding-top: 3em;
   }
 }
 
@@ -405,7 +405,7 @@ nav ul {
 
 .nav-variation_list li {
   align-self: stretch;
-  flex-basis: 50px;
+  flex-basis: 42px;
 
   @media(min-width: 640px) {
     padding-top: .25em;
