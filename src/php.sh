@@ -30,6 +30,12 @@ overwrite_to_file()
  curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/drawbridge/light/index.php" > "../demo/drawbridge/light/index.html"
  curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/meadow/dark/index.php" > "../demo/meadow/dark/index.html"
  curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/meadow/light/index.php" > "../demo/meadow/light/index.html"
+ curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/lavender/dark/index.php" > "../demo/lavender/dark/index.html"
+ curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/lavender/light/index.php" > "../demo/lavender/light/index.html"
+ curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/garden/dark/index.php" > "../demo/garden/dark/index.html"
+ curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/garden/light/index.php" > "../demo/garden/light/index.html"
+ curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/suburb/dark/index.php" > "../demo/suburb/dark/index.html"
+ curl "http://localhost/~bram/github.com/atelierbram/Base2Tone-prism/src/suburb/light/index.php" > "../demo/suburb/light/index.html"
  }
 
 # execute it

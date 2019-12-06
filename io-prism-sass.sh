@@ -29,6 +29,12 @@ overwrite_to_file()
   base16-builder --scheme "db/schemes/base2tone-meadow.yml" --template "db/templates/prism-sass/light-alt.ejs" > "output/prism-sass/_prism-base2tone-meadow-light.scss"
   base16-builder --scheme "db/schemes/base2tone-drawbridge.yml" --template "db/templates/prism-sass/dark.ejs" > "output/prism-sass/_prism-base2tone-drawbridge-dark.scss"
   base16-builder --scheme "db/schemes/base2tone-drawbridge.yml" --template "db/templates/prism-sass/light-alt.ejs" > "output/prism-sass/_prism-base2tone-drawbridge-light.scss"
+  base16-builder --scheme "db/schemes/base2tone-suburb.yml" --template "db/templates/prism-sass/dark.ejs" > "output/prism-sass/_prism-base2tone-suburb-dark.scss"
+  base16-builder --scheme "db/schemes/base2tone-suburb.yml" --template "db/templates/prism-sass/light-alt.ejs" > "output/prism-sass/_prism-base2tone-suburb-light.scss"
+  base16-builder --scheme "db/schemes/base2tone-lavender.yml" --template "db/templates/prism-sass/dark.ejs" > "output/prism-sass/_prism-base2tone-lavender-dark.scss"
+  base16-builder --scheme "db/schemes/base2tone-lavender.yml" --template "db/templates/prism-sass/light-alt.ejs" > "output/prism-sass/_prism-base2tone-lavender-light.scss"
+  base16-builder --scheme "db/schemes/base2tone-garden.yml" --template "db/templates/prism-sass/dark.ejs" > "output/prism-sass/_prism-base2tone-garden-dark.scss"
+  base16-builder --scheme "db/schemes/base2tone-garden.yml" --template "db/templates/prism-sass/light-alt.ejs" > "output/prism-sass/_prism-base2tone-garden-light.scss"
  }
 
 # execute it
