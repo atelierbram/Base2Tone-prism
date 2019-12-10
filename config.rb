@@ -21,8 +21,9 @@ end
 
 preferred_syntax = :scss
 http_path = '/'
-css_dir = 'assets/css'
-sass_dir = 'assets/sass'
+css_dir = 'docs/assets/css'
+sass_dir = 'docs/assets/sass'
+add_import_path "docs/assets/sass/demo-tiles"
 add_import_path "output/prism-sass"
 images_dir = 'assets/img'
 javascripts_dir = 'assets/js'
